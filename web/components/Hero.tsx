@@ -35,7 +35,7 @@ export default function Hero() {
 							allowFullScreen={true}
 						></iframe>
 					</div>
-					<a className="text-xl text-customWhite mb-4 font-bold">
+					<a className="text-xl text-customGray dark:text-customWhite mb-4 font-bold">
 						{t('titleVideo')}
 					</a>
 					<div className="flex items-center text-gray-500 mb-4">
@@ -49,7 +49,7 @@ export default function Hero() {
 							</span>
 						</div>
 					</div>
-					<div className="items-center rounded-lg inline-flex justify-center px-2 text-white bg-green-400 bg-opacity-30 h-9 text-base">
+					<div className="items-center rounded-lg inline-flex justify-center px-2 text-customGray dark:text-white bg-green-400 bg-opacity-30 h-9 text-base">
 						<div className="bg-[rgb(2,192,118)] rounded-full mr-2 h-2 w-2" />
 						{t('skillLevel')}
 					</div>
