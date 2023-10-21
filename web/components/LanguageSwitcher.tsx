@@ -1,24 +1,38 @@
+import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'next-i18next';
-// ... your other imports
+import Link from 'next/link';
 
 const languages = [
 	{ code: 'en', label: 'English' },
+	{ code: 'zh', label: '中文' }, // Simplified Chinese
+	{ code: 'vn', label: 'Tiếng Việt' }, // Vietnamese
+	{ code: 'ru', label: 'Русский' }, // Russian
+	{ code: 'ja', label: '日本語' }, // Japanese
+	{ code: 'ko', label: '한국어' }, // Korean
+	{ code: 'es', label: 'Español' }, // Spanish
+	{ code: 'pt', label: 'Português' }, // Portuguese
+	{ code: 'fr', label: 'Français' }, // French
 	{ code: 'de', label: 'Deutsch' },
-	// ... and so on for all your languages
+	{ code: 'nl', label: 'Nederlands' }, // Dutch
 ];
 
 export default function LanguageSwitcher() {
 	const { i18n } = useTranslation();
+	const [showDropdown, setShowDropdown] = useState(false);
 
 	return (
-		<div className="relative group">
+		<div
+			className="relative inline-block p-4"
+			onMouseEnter={() => setShowDropdown(true)}
+		>
 			{/* World SVG Icon */}
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				className="h-6 w-6 cursor-pointer"
+				className="h-5 w-5 cursor-pointer hover:text-customBitcoin"
 				fill="none"
 				viewBox="0 0 24 24"
 				stroke="currentColor"
+				onClick={() => setShowDropdown(!showDropdown)}
 			>
 				<path
 					fill-rule="evenodd"
@@ -29,16 +43,32 @@ export default function LanguageSwitcher() {
 			</svg>
 
 			{/* Dropdown */}
-			<div className="absolute right-0 mt-2 w-48 bg-white divide-y divide-gray-100 rounded-md shadow-lg group-hover:block hidden">
-				<div className="grid grid-cols-2 text-black">
+			<div
+				className={
+					showDropdown
+						? 'absolute right-0 mt-5 w-60 divide-y divide-gray-100 rounded block text-center bg-white dark:bg-customDark dark:text-customWhite'
+						: 'hidden'
+				}
+			>
+				<div className="grid grid-cols-2">
 					{languages.map((lang) => (
-						<div
+						<Link
 							key={lang.code}
-							className="p-4 hover:bg-gray-200 cursor-pointer"
-							onClick={() => i18n.changeLanguage(lang.code)}
+							href="/"
+							locale={lang.code}
+							className="p-4 cursor-pointer hover:text-customBitcoin"
 						>
 							{lang.label}
-						</div>
+						</Link>
+						// <div
+						// 	key={lang.code}
+						// 	className="p-4 cursor-pointer hover:text-customBitcoin"
+						// 	onClick={() => {
+						// 		i18n.changeLanguage(lang.code);
+						// 		setShowDropdown(false); // Optional: Close dropdown on language select
+						// 	}}
+						// >
+						// </div>
 					))}
 				</div>
 			</div>
