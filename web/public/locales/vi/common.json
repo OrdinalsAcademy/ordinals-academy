@@ -11,5 +11,129 @@
 	"datePrefix": "Tháng 10",
 	"videoLengthSuffix": "phút",
 	"skillLevel": "Trung cấp",
-	"Free Bitcoin Ordinals Education": "Giáo dục Bitcoin Ordinals miễn phí"
+	"Free Bitcoin Ordinals Education": "Giáo dục Bitcoin Ordinals miễn phí",
+	"terminologyHeader": {
+		"title": "Thuật ngữ Bitcoin Ordinals",
+		"description": "Hướng dẫn độc quyền giúp bạn hiểu ngôn ngữ trong Ordinals."
+	},
+	"bitcoinNode": {
+		"title": "Nút Bitcoin",
+		"description": "Hệ thống chạy phần mềm Bitcoin Core, xác nhận giao dịch và khối trên blockchain trong khi đảm bảo tuân theo quy tắc đồng thuận của mạng."
+	},
+	"bitcoinProtocol": {
+		"title": "Giao thức Bitcoin",
+		"description": "Hệ thống phi tập trung quản lý việc tạo, truyền và xác thực giao dịch Bitcoin."
+	},
+	"brc20": {
+		"title": "BRC-20",
+		"description": "Một tiêu chuẩn token thay thế thử nghiệm trên Bitcoin, chuyển đổi một token không thay thế (Ordinals) thành có thể thay thế."
+	},
+	"cursedInscription": {
+		"title": "Bản khắc Bị Nguyền rủa",
+		"description": "Khi một bản khắc không tuân theo tiêu chuẩn giao thức Ordinal hiện tại, bản khắc đó được coi là “bị nguyền rủa”."
+	},
+	"digitalArtifact": {
+		"title": "Hiện vật Kỹ thuật số",
+		"description": "Bất kỳ tài sản kỹ thuật số nào có đặc điểm sở hữu, hoàn thiện, không cần phép, không kiểm duyệt và không thể thay đổi."
+	},
+	"envelopes": {
+		"title": "Phong bì",
+		"description": "Dữ liệu khắc được 'bọc' trong tapscript Pay-to-Taproot của một giao dịch Bitcoin."
+	},
+	"exoticRarity": {
+		"title": "Độ Hiếm Độc đáo",
+		"description": "Thuộc tính hiếm dựa trên đặc điểm độc đáo như mẫu số cụ thể, tên hoặc ý nghĩa lịch sử của sats."
+	},
+	"inscription": {
+		"title": "Bản khắc",
+		"description": "Nội dung tùy ý được lưu trữ trong một giao dịch Bitcoin trong quá trình tạo ra một hiện vật kỹ thuật số (tương tự như NFT trên Bitcoin)."
+	},
+	"inscriptionID": {
+		"title": "ID Bản khắc",
+		"description": "Một định danh bản khắc bao gồm ID giao dịch của giao dịch tiết lộ (trong quá trình tạo bản khắc) và chỉ mục của bản khắc mới trong giao dịch đó."
+	},
+	"indexer": {
+		"title": "Chỉ mục",
+		"description": "Các chỉ mục giám sát số thứ tự và dữ liệu khắc của chúng."
+	},
+	"inscriptionNumber": {
+		"title": "Số Khắc",
+		"description": "Số được gán cho một bản khắc dựa trên thứ tự tạo ra trên mạng."
+	},
+	"operationCodeOpCode": {
+		"title": "Mã Thao tác (OpCode)",
+		"description": "Một \"Mã Thao tác (OpCode)\" trong Bitcoin hoạt động như một lệnh hoặc hướng dẫn trong ngôn ngữ kịch bản Bitcoin được biết đến là Script. OpCode được sử dụng trong UTXO để xác nhận giao dịch và kiểm soát điều kiện chi tiêu."
+	},
+	"ordClient": {
+		"title": "Khách hàng Ord",
+		"description": "Phần mềm mã nguồn mở cho phép người dùng tham gia vào giao thức Ordinals. Ord cung cấp một dịch vụ chỉ mục thứ tự, một trình duyệt khối, một dịch vụ khắc và một ví dòng lệnh."
+	},
+	"ordinalHandbook": {
+		"title": "Sách hướng dẫn Thứ tự",
+		"description": "Tìm thấy tại https://docs.ordinals.com, Sách hướng dẫn Ordinals được xem xét như một hướng dẫn về Lý thuyết Thứ tự."
+	},
+	"ordinalsProtocol": {
+		"title": "Giao thức Ordinals",
+		"description": "Giao thức Ordinals là một hệ thống để lưu trữ và theo dõi tài sản kỹ thuật số (NFTs) trên Bitcoin."
+	},
+	"ordinalTheory": {
+		"title": "Lý thuyết Thứ tự",
+		"description": "Một lược đồ để tuần tự hóa và theo dõi satoshis cá nhân sử dụng số thứ tự dựa trên thứ tự tạo ra của chúng."
+	},
+	"provenanceParentChild": {
+		"title": "Nguồn gốc (Cha/Con)",
+		"description": "Nguồn gốc cho phép người giữ bản khắc chứng minh quyền sở hữu và tạo ra các thực thể con xác định nguồn gốc trên chuỗi."
+	},
+	"partiallySignedBitcoinTransactionPSBT": {
+		"title": "Giao dịch Bitcoin Được ký một phần (PSBT)",
+		"description": "Thường được sử dụng trong thị trường thứ tự, PSBTs cho phép ký một phần của một giao dịch. Chúng đợi bên thứ hai (hoặc nhiều bên) để hoàn thành giao dịch bằng cách đồng ý với điều kiện của PSBT và phát sóng giao dịch."
+	},
+	"payToTaprootP2TR": {
+		"title": "Thanh toán-đến-Taproot (P2TR)",
+		"description": "Thanh toán-đến-Taproot là một loại đầu ra giao dịch Bitcoin được giới thiệu với bản cập nhật Taproot vào tháng 11 năm 2021."
+	},
+	"recursion": {
+		"title": "Đệ quy",
+		"description": "Một phương pháp cho phép bản khắc tham chiếu đến nội dung của bản khắc khác, giảm kích thước dữ liệu trong khi bảo tồn truy cập nội dung."
+	},
+	"satoshiNumbers": {
+		"title": "Số Satoshi (còn được gọi là Số thứ tự)",
+		"description": "Việc tuần tự hóa satoshis, được gán theo thứ tự chúng được tạo ra; những số này được bảo tồn qua các giao dịch."
+	},
+	"reinscription": {
+		"title": "Tái khắc",
+		"description": "Đính kèm thêm dữ liệu khắc vào một satoshi đã được khắc."
+	},
+	"rodamorRarity": {
+		"title": "Rarities Rodamor",
+		"description": "Một hệ thống phân loại cho độ hiếm của sat dựa trên các sự kiện định kỳ của Bitcoin, như được định nghĩa bởi Casey Rodarmor."
+	},
+	"satoshi": {
+		"title": "Satoshi",
+		"description": "Đơn vị nhỏ nhất của Bitcoin, tương đương với 0.00000001 BTC."
+	},
+	"satHunting": {
+		"title": "Săn lùng Sat",
+		"description": "Thực hành tìm kiếm và xác định các sat hiếm dựa trên ý nghĩa lịch sử hoặc thứ tự của chúng."
+	},
+	"satName": {
+		"title": "Tên Sat",
+		"description": "Một định danh duy nhất cho mỗi satoshi được xuất phát từ số satoshi của nó sử dụng chuyển đổi Base26 (bảng chữ cái)."
+	},
+	"segwit": {
+		"title": "Segwit",
+		"description": "Được ra mắt vào tháng 8 năm 2017, được thiết kế để giảm kích thước dữ liệu giao dịch bằng cách tách một số dữ liệu khỏi chữ ký giao dịch. Chính trong khu vực tách biệt này mà các tin nhắn tùy ý có thể được lưu trữ. Tính năng này có sẵn với bất kỳ địa chỉ SegWit nào, bắt đầu bằng '3' hoặc 'bc1q'."
+	},
+	"teleburn": {
+		"title": "Teleburn",
+		"description": "Quá trình đốt cháy một NFT trên chuỗi gốc của nó, theo sau là việc khắc nội dung tương tự lên blockchain Bitcoin."
+	},
+	"taproot": {
+		"title": "Taproot",
+		"description": "Được ra mắt vào tháng 11 năm 2021 với mục tiêu cải thiện bảo mật, hiệu quả và khả năng mở rộng. Các kịch bản Taproot có lợi thế của việc có rất ít hạn chế về nội dung của chúng. Ngoài ra, chúng được hưởng lợi từ chiết khấu chứng nhân, làm cho việc lưu trữ nội dung khắc tương đối kinh tế. Địa chỉ liên quan đến Taproot bắt đầu bằng 'bc1p'."
+	},
+	"utxo": {
+		"title": "Đầu ra giao dịch chưa tiêu (UTXO)",
+		"description": "Thay vì số dư tài khoản, Bitcoin sử dụng UTXOs để theo dõi vị trí của tiền trên mạng. Để tiêu một UTXO, bạn phải cung cấp một chữ ký để chứng minh bạn sở hữu khóa riêng tư tương ứng với địa chỉ đó."
+	}
 }
