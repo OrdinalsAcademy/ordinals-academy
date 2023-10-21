@@ -41,7 +41,7 @@ export default function DesktopMenu() {
 			<Link href="/">
 				<span className="cursor-pointer flex items-center font-display text-2xl">
 					<div className="flex items-center flex-shrink-0 text-white mr-6">
-						<span className="rounded-full transition-all p-1.5 px-5 text-xl tracking-tight font-Mitr text-customGray dark:text-customBitcoin">
+						<span className="rounded-full p-1.5 px-5 text-xl tracking-tight font-Mitr text-customGray dark:text-white hover:text-customBitcoin dark:hover:text-customBitcoin">
 							Ordinals Academy
 						</span>
 					</div>
