@@ -35,7 +35,7 @@ class MyDocument extends Document<Props> {
 					<link
 						rel="alternate"
 						hrefLang="x-default"
-						href="https://yourwebsite.com/"
+						href="https://ordinalsacademy.org/"
 					/>
 					{[
 						'en',
