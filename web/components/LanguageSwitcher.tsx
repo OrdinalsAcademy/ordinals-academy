@@ -39,6 +39,10 @@ export default function LanguageSwitcher() {
 		};
 	}, [showDropdown]);
 
+	const handleChangeLanguage = async (locale: string) => {
+		await router.push(router.asPath, undefined, { locale });
+	};
+
 	return (
 		<div
 			ref={containerRef}
@@ -69,14 +73,17 @@ export default function LanguageSwitcher() {
 			>
 				<div className="grid grid-cols-2">
 					{languages.map((lang) => (
-						<Link
+						<div
 							key={lang.code}
-							href={router.pathname}
-							locale={lang.code}
-							className="p-4 cursor-pointer hover:text-customBitcoin"
+							onClick={() => handleChangeLanguage(lang.code)}
+							className={`p-4 cursor-pointer hover:text-customBitcoin ${
+								router.locale === lang.code
+									? 'text-customBitcoin'
+									: ''
+							}`}
 						>
 							{lang.label}
-						</Link>
+						</div>
 					))}
 				</div>
 			</div>
