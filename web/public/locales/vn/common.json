@@ -1,27 +1,15 @@
 {
-	"h1": "A simple",
-	"change-locale": "Change locale to \"{{changeTo}}\"",
-	"to-second-page": "To second page",
-	"error-with-status": "A {{statusCode}} error occurred on server",
-	"error-without-status": "An error occurred on the server",
-	"title": "Home | next-i18next",
-	"blog": {
-		"appDir": {
-			"question": "Are you using the new Next.js 13 app directory?",
-			"answer": "Then check out <1>this blog post</1>.",
-			"link": "https://locize.com/blog/next-13-app-dir-i18n/"
-		},
-		"optimized": {
-			"question": "Do you like to unleash some super powers to have all side optimized translations?",
-			"answer": "Then you may have a look at <1>this blog post</1>.",
-			"link": "https://locize.com/blog/next-i18next/"
-		},
-		"ssg": {
-			"question": "Do you want to use SSG (next export)?",
-			"answer": "Then you may have a look at <1>this blog post</1>.",
-			"link": "https://locize.com/blog/next-i18n-static/"
-		}
-	},
-	"home": "home",
-	"Learn All About": "Learn All About"
+	"to-second-page": "Đến trang thứ hai",
+	"home": "Trang chính",
+	"Learn All About": "Tìm hiểu về",
+	"h1": "Bitcoin Ordinals",
+	"subheading": "Tìm hiểu về",
+	"description": "Hướng dẫn toàn diện của bạn về Bitcoin Ordinals. Dù bạn là người mới học cách đăng ký hay là nhà phát triển muốn tạo dự án Ordinals, chúng tôi đã có mọi thứ bạn cần.",
+	"startButton": "Bắt đầu tại đây",
+	"featured": "Đặc trưng",
+	"titleVideo": "UTXOs là gì?",
+	"datePrefix": "Tháng 10",
+	"videoLengthSuffix": "phút",
+	"skillLevel": "Trung cấp",
+	"Free Bitcoin Ordinals Education": "Giáo dục Bitcoin Ordinals miễn phí"
 }
