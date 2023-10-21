@@ -11,5 +11,129 @@
 	"datePrefix": "Out",
 	"videoLengthSuffix": "m",
 	"skillLevel": "Intermediário",
-	"Free Bitcoin Ordinals Education": "Educação gratuita sobre Bitcoin Ordinals"
+	"Free Bitcoin Ordinals Education": "Educação gratuita sobre Bitcoin Ordinals",
+	"terminologyHeader": {
+		"title": "Terminologia de Ordinais do Bitcoin",
+		"description": "Seu guia definitivo para entender a linguagem em Ordinais."
+	},
+	"bitcoinNode": {
+		"title": "Nó do Bitcoin",
+		"description": "Um sistema que executa o software Bitcoin Core, validando transações e blocos na blockchain, garantindo a adesão às regras de consenso da rede."
+	},
+	"bitcoinProtocol": {
+		"title": "Protocolo do Bitcoin",
+		"description": "O sistema descentralizado que governa a criação, transmissão e verificação de transações do Bitcoin."
+	},
+	"brc20": {
+		"title": "BRC-20",
+		"description": "Um padrão experimental de token fungível no Bitcoin que torna um token não fungível (Ordinais) em fungível."
+	},
+	"cursedInscription": {
+		"title": "Inscrição Amaldiçoada",
+		"description": "Quando uma inscrição não segue os padrões atuais do protocolo Ordinal, essa inscrição é considerada “amaldiçoada”."
+	},
+	"digitalArtifact": {
+		"title": "Artefato Digital",
+		"description": "Qualquer ativo digital que possui características de propriedade, integridade, permissão aberta, impossibilidade de censura e imutabilidade."
+	},
+	"envelopes": {
+		"title": "Envelopes",
+		"description": "Dados da inscrição são 'envelopados' no tapscript Pay-to-Taproot de uma transação Bitcoin."
+	},
+	"exoticRarity": {
+		"title": "Raridade Exótica",
+		"description": "Atributos subjetivos de raridade de sats com base em características únicas, como padrões de numeração específicos, nomenclatura ou significado histórico."
+	},
+	"inscription": {
+		"title": "Inscrição",
+		"description": "Conteúdo arbitrário armazenado em uma transação Bitcoin durante a criação de um artefato digital (semelhante a NFTs no Bitcoin)."
+	},
+	"inscriptionID": {
+		"title": "ID da Inscrição",
+		"description": "Um identificador de inscrição inclui o ID da transação revelada (durante a criação da inscrição) e o índice da nova inscrição dentro dessa transação."
+	},
+	"indexer": {
+		"title": "Indexador",
+		"description": "Os indexadores monitoram números ordinais e seus dados de inscrição."
+	},
+	"inscriptionNumber": {
+		"title": "Número da Inscrição",
+		"description": "O número atribuído a uma inscrição com base em sua ordem de criação na rede."
+	},
+	"operationCodeOpCode": {
+		"title": "Código de Operação (OpCode)",
+		"description": "Um \"Código de Operação (OpCode)\" no Bitcoin atua como um comando ou instrução dentro da linguagem de script do Bitcoin conhecida como Script. OpCodes são usados ​​dentro de UTXOs para validação de transações e controle de condições de gastos."
+	},
+	"ordClient": {
+		"title": "Cliente Ord",
+		"description": "O software de código aberto que permite aos usuários participarem do protocolo Ordinals. O Ord oferece um serviço de indexação ordinal, um explorador de blocos, um serviço de inscrição e uma carteira de linha de comando."
+	},
+	"ordinalHandbook": {
+		"title": "Manual Ordinal",
+		"description": "Encontrado em https://docs.ordinals.com, o Manual Ordinals serve como um guia para a Teoria Ordinal."
+	},
+	"ordinalsProtocol": {
+		"title": "Protocolo Ordinals",
+		"description": "O protocolo Ordinals é um sistema para armazenar e rastrear ativos digitais (NFTs) no Bitcoin."
+	},
+	"ordinalTheory": {
+		"title": "Teoria Ordinal",
+		"description": "Um esquema que serializa e rastreia satoshis individuais usando números ordinais com base em sua ordem de criação."
+	},
+	"provenanceParentChild": {
+		"title": "Proveniência (Pai/Filho)",
+		"description": "A proveniência permite ao titular de uma inscrição demonstrar propriedade e criar entidades filhas que estabelecem a proveniência on-chain."
+	},
+	"partiallySignedBitcoinTransactionPSBT": {
+		"title": "Transação Bitcoin Parcialmente Assinada (PSBT)",
+		"description": "Comumente usados em mercados ordinais, os PSBTs permitem a assinatura parcial de uma transação. Eles esperam que a segunda parte (ou várias partes) complete a transação concordando com as condições do PSBT e transmitindo a transação."
+	},
+	"payToTaprootP2TR": {
+		"title": "Pay-to-Taproot (P2TR)",
+		"description": "Pay-to-Taproot é um tipo de saída de transação Bitcoin introduzida com a atualização Taproot em novembro de 2021."
+	},
+	"recursion": {
+		"title": "Recursão",
+		"description": "Um método que permite inscrições referenciarem o conteúdo de outras inscrições, minimizando o tamanho dos dados enquanto preserva o acesso ao conteúdo."
+	},
+	"satoshiNumbers": {
+		"title": "Números Satoshi (também conhecidos como Números Ordinais)",
+		"description": "A serialização de satoshis, atribuída na ordem em que são criados; esses números são preservados entre transações."
+	},
+	"reinscription": {
+		"title": "Reinscrição",
+		"description": "Anexando dados adicionais de inscrição a um satoshi já inscrito."
+	},
+	"rodamorRarity": {
+		"title": "Raridade Rodamor",
+		"description": "Um sistema de classificação para raridade sat baseado nos eventos periódicos do Bitcoin, conforme definido por Casey Rodarmor."
+	},
+	"satoshi": {
+		"title": "Satoshi",
+		"description": "A menor unidade de Bitcoin, equivalente a 0.00000001 BTC."
+	},
+	"satHunting": {
+		"title": "Caça ao Sat",
+		"description": "A prática de procurar e identificar sats raros com base em sua significância histórica ou ordinal."
+	},
+	"satName": {
+		"title": "Nome do Sat",
+		"description": "Um identificador único para cada satoshi derivado de seu número satoshi usando conversão Base26 (alfabética)."
+	},
+	"segwit": {
+		"title": "Segwit",
+		"description": "Lançado em agosto de 2017, projetado para reduzir o tamanho dos dados da transação, separando certos dados da assinatura da transação. É nesta área segregada que mensagens arbitrárias podem ser armazenadas. Este recurso está disponível com qualquer endereço SegWit, que começa com '3' ou 'bc1q'."
+	},
+	"teleburn": {
+		"title": "Teleburn",
+		"description": "O processo de queimar um NFT em sua cadeia original de criação, seguido pela inscrição do mesmo conteúdo na blockchain Bitcoin."
+	},
+	"taproot": {
+		"title": "Taproot",
+		"description": "Lançado em novembro de 2021 com o objetivo de melhorar a segurança, eficiência e escalabilidade. Scripts Taproot oferecem a vantagem de ter muito poucas restrições em seu conteúdo. Além disso, eles se beneficiam do desconto da testemunha, tornando o armazenamento de conteúdo de inscrição relativamente econômico. Endereços relacionados ao Taproot começam com 'bc1p'."
+	},
+	"utxo": {
+		"title": "Saída de Transação Não Gasta (UTXO)",
+		"description": "Em vez de saldos de conta, o Bitcoin usa UTXOs para rastrear a localização de moedas na rede. Para gastar um UTXO, você deve fornecer uma assinatura para provar que possui a chave privada correspondente a esse endereço."
+	}
 }
