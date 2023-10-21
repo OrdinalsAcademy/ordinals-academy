@@ -4,15 +4,15 @@ import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 
 import { useTranslation, Trans } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-
 import { Header } from '../components/Header';
-import { Footer } from '../components/Footer';
+import { useTheme } from 'providers/ThemeProvider';
 
 type Props = {
 	// Add custom props here
 };
 
 const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
+	const { theme, toggleTheme } = useTheme();
 	const router = useRouter();
 	const { t, i18n } = useTranslation('common');
 
@@ -32,7 +32,7 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 
 	return (
 		<>
-			<main>
+			<main className="bg-white text-black dark:bg-black dark:text-white">
 				<Header heading={t('h1')} title={t('title')} />
 				<div style={{ display: 'inline-flex', width: '90%' }}>
 					<div style={{ width: '33%' }}>
@@ -98,6 +98,10 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 					<Link href="/" locale={changeTo}>
 						<button>{t('change-locale', { changeTo })}</button>
 					</Link>
+
+					<button onClick={toggleTheme}>
+						Switch to {theme === 'light' ? 'dark' : 'light'} mode
+					</button>
 					{/* alternative language change without using Link component
           <button onClick={() => onToggleLanguageClick(changeTo)}>
             {t('change-locale', { changeTo })}
