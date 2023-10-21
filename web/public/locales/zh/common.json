@@ -11,5 +11,129 @@
 	"datePrefix": "10月",
 	"videoLengthSuffix": "分钟",
 	"skillLevel": "中级",
-	"Free Bitcoin Ordinals Education": "免费比特币序数教育"
+	"Free Bitcoin Ordinals Education": "免费比特币序数教育",
+	"terminologyHeader": {
+		"title": "比特币序数术语",
+		"description": "您的一站式指南，了解 Ordinals 中的语言。"
+	},
+	"bitcoinNode": {
+		"title": "比特币节点",
+		"description": "运行比特币核心软件的系统，验证区块链上的交易和区块，确保遵守网络的共识规则。"
+	},
+	"bitcoinProtocol": {
+		"title": "比特币协议",
+		"description": "管理比特币交易的创建、传输和验证的去中心化系统。"
+	},
+	"brc20": {
+		"title": "BRC-20",
+		"description": "在比特币上的一个实验性的可替代代币标准，使一个非替代代币（Ordinals）变得可替代。"
+	},
+	"cursedInscription": {
+		"title": "被诅咒的铭文",
+		"description": "当一个铭文不遵循当前的 Ordinal 协议标准时，该铭文被视为“被诅咒”。"
+	},
+	"digitalArtifact": {
+		"title": "数字工件",
+		"description": "具有所有权、完整性、无需许可、不受审查和不变性特征的任何数字资产。"
+	},
+	"envelopes": {
+		"title": "信封",
+		"description": "铭文数据被“封装”在比特币交易的 Pay-to-Taproot tapscript 中。"
+	},
+	"exoticRarity": {
+		"title": "异国稀有度",
+		"description": "基于独特特性（如特定编号模式、命名或历史意义）的 sats 的主观稀有属性。"
+	},
+	"inscription": {
+		"title": "铭文",
+		"description": "在创建数字工件（类似于比特币上的 NFT）期间存储在比特币交易中的任意内容。"
+	},
+	"inscriptionID": {
+		"title": "铭文 ID",
+		"description": "铭文标识符包括显示交易的交易 ID（在创建铭文期间）以及该交易中新铭文的索引。"
+	},
+	"indexer": {
+		"title": "索引器",
+		"description": "索引器监控序数和它们的铭文数据。"
+	},
+	"inscriptionNumber": {
+		"title": "铭文编号",
+		"description": "基于其在网络上的创建顺序为铭文分配的编号。"
+	},
+	"operationCodeOpCode": {
+		"title": "操作码 (OpCode)",
+		"description": "比特币中的“操作码 (OpCode)”在被称为 Script 的比特币脚本语言中充当命令或指令。在 UTXO 中使用 OpCode 对交易进行验证并控制消费条件。"
+	},
+	"ordClient": {
+		"title": "Ord 客户端",
+		"description": "允许用户参与 Ordinals 协议的开源软件。Ord 提供序数索引服务、区块浏览器、铭文服务和命令行钱包。"
+	},
+	"ordinalHandbook": {
+		"title": "Ordinal 手册",
+		"description": "在 https://docs.ordinals.com 上找到的 Ordinals 手册作为一个指导 Ordinal 理论的指南。"
+	},
+	"ordinalsProtocol": {
+		"title": "Ordinals 协议",
+		"description": "Ordinals 协议是一个在比特币上存储和跟踪数字资产（NFTs）的系统。"
+	},
+	"ordinalTheory": {
+		"title": "序数理论",
+		"description": "一个基于其创建顺序使用序数对单个 satoshis 进行序列化和跟踪的方案。"
+	},
+	"provenanceParentChild": {
+		"title": "Provenance (父/子)",
+		"description": "Provenance 允许铭文的持有者展示所有权并创建在链上建立起源的子实体。"
+	},
+	"partiallySignedBitcoinTransactionPSBT": {
+		"title": "部分签名的比特币交易 (PSBT)",
+		"description": "PSBTs 通常用于序数市场，允许部分签名交易。他们等待第二方（或多方）通过同意 PSBT 的条件并广播交易来完成交易。"
+	},
+	"payToTaprootP2TR": {
+		"title": "支付至 Taproot (P2TR)",
+		"description": "Pay-to-Taproot 是在 2021 年 11 月与 Taproot 更新一起引入的比特币交易输出类型。"
+	},
+	"recursion": {
+		"title": "递归",
+		"description": "一种方法，允许铭文引用其他铭文的内容，同时减少数据大小并保留内容访问。"
+	},
+	"satoshiNumbers": {
+		"title": "Satoshi 数字 (也称为序数)",
+		"description": "按照创建顺序分配的 satoshis 的序列化；这些数字在交易中得以保留。"
+	},
+	"reinscription": {
+		"title": "重新铭文",
+		"description": "将额外的铭文数据附加到已经铭刻的 satoshi 上。"
+	},
+	"rodamorRarity": {
+		"title": "Rodamor 稀有性",
+		"description": "基于 Casey Rodarmor 定义的比特币周期性事件的 sat 稀有性分类系统。"
+	},
+	"satoshi": {
+		"title": "Satoshi",
+		"description": "比特币的最小单位，相当于 0.00000001 BTC。"
+	},
+	"satHunting": {
+		"title": "Sat 寻猎",
+		"description": "基于其历史或序数重要性搜索和识别稀有 sat 的实践。"
+	},
+	"satName": {
+		"title": "Sat 名称",
+		"description": "每个 satoshi 的唯一标识符，使用 Base26 (字母) 转换从其 satoshi 数字派生出来。"
+	},
+	"segwit": {
+		"title": "Segwit",
+		"description": "于 2017 年 8 月启动，旨在通过从交易签名中分离某些数据来减少交易数据大小。在这个隔离区域中可以存储任意消息。此功能可用于任何 SegWit 地址，其起始为 '3' 或 'bc1q'。"
+	},
+	"teleburn": {
+		"title": "Teleburn",
+		"description": "在其原始创建链上烧毁 NFT 的过程，然后将相同的内容铭刻到比特币区块链上。"
+	},
+	"taproot": {
+		"title": "Taproot",
+		"description": "于 2021 年 11 月启动，旨在提高安全性、效率和可扩展性。Taproot 脚本的优势在于其内容几乎没有任何限制。此外，它们受益于见证折扣，使得存储铭文内容相对经济。与 Taproot 相关的地址以 'bc1p' 开头。"
+	},
+	"utxo": {
+		"title": "未花费的交易输出 (UTXO)",
+		"description": "比特币使用 UTXOs 跟踪网络上的硬币位置，而不是账户余额。要花费 UTXO，您必须提供签名以证明您拥有该地址对应的私钥。"
+	}
 }
