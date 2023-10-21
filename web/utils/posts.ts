@@ -8,6 +8,12 @@ import html from 'remark-html';
 const postsDirectory = path.join(process.cwd(), 'content');
 
 export function getPostsByLocale(locale: string) {
+	const contentDir = path.join(process.cwd(), 'content', locale);
+
+	// Check if directory exists, if not return English content as default
+	if (!fs.existsSync(contentDir)) {
+		return getPostsByLocale('en');
+	}
 	const fullPath = path.join(postsDirectory, locale);
 	const fileNames = fs.readdirSync(fullPath);
 	const allPostsData = fileNames.map((fileName) => {
