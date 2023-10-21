@@ -30,7 +30,7 @@ class MyDocument extends Document<Props> {
 					<link
 						data-react-helmet="true"
 						rel="icon"
-						href="https://github.githubassets.com/favicons/favicon.png"
+						href="https://raw.githubusercontent.com/OrdinalsAcademy/ordinals-academy/main/web/public/favicon.ico"
 					/>
 					<link
 						rel="alternate"
