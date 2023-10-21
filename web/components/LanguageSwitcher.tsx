@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const languages = [
 	{ code: 'en', label: 'English' },
@@ -19,6 +20,7 @@ const languages = [
 export default function LanguageSwitcher() {
 	const [showDropdown, setShowDropdown] = useState(false);
 	const containerRef = useRef<any>(null);
+	const router = useRouter();
 
 	useEffect(() => {
 		function handleOutsideClick(event: any) {
@@ -71,7 +73,7 @@ export default function LanguageSwitcher() {
 					{languages.map((lang) => (
 						<Link
 							key={lang.code}
-							href="/"
+							href={router.pathname}
 							locale={lang.code}
 							className="p-4 cursor-pointer hover:text-customBitcoin"
 						>

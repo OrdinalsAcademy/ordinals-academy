@@ -1,7 +1,5 @@
 import { useTheme } from '@/providers/ThemeProvider';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useTranslation } from 'next-i18next';
 import LanguageSwitcher from '../LanguageSwitcher';
 
 const navItems = [
@@ -20,22 +18,7 @@ const NavItem = ({ item }: any) => (
 
 export default function DesktopMenu() {
 	const { theme, toggleTheme } = useTheme();
-	const { t, i18n } = useTranslation('common');
 
-	const router = useRouter();
-
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
-	const onToggleLanguageClick = (newLocale: string) => {
-		const { pathname, asPath, query } = router;
-		router.push({ pathname, query }, asPath, { locale: newLocale });
-	};
-
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
-	const clientSideLanguageChange = (newLocale: string) => {
-		i18n.changeLanguage(newLocale);
-	};
-
-	const changeTo = router.locale === 'en' ? 'de' : 'en';
 	return (
 		<div className="hidden lg:flex items-center justify-between w-full">
 			<Link href="/">
