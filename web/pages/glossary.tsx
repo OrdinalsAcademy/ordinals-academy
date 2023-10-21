@@ -2,8 +2,18 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState, useRef } from 'react';
 import FrankenImage from 'public/professor_franken.jpg';
+import { useTranslation } from 'next-i18next';
+import type { GetStaticProps, InferGetStaticPropsType } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-export default function Glossary() {
+type Props = {
+	// Add custom props here
+};
+
+export default function Glossary(
+	_props: InferGetStaticPropsType<typeof getStaticProps>
+) {
+	const { t } = useTranslation('common');
 	const [isAtTop, setIsAtTop] = useState(false);
 
 	const sentinelRef = useRef(null);
@@ -33,212 +43,182 @@ export default function Glossary() {
 	const data = [
 		{
 			id: 1,
-			title: 'Bitcoin Node',
-			description:
-				"A system that runs the Bitcoin Core software, validating transactions and blocks on the blockchain while ensuring adherence to the network's consensus rules.",
+			title: t('bitcoinNode.title'),
+			description: t('bitcoinNode.description'),
 			slug: 'bitcoin-node',
 		},
 		{
 			id: 2,
-			title: 'Bitcoin Protocol',
-			description:
-				'The decentralized system that governs the creation, transmission, and verification of Bitcoin transactions.',
+			title: t('bitcoinProtocol.title'),
+			description: t('bitcoinProtocol.description'),
 			slug: 'bitcoin-protocol',
 		},
 		{
 			id: 3,
-			title: 'BRC-20',
-			description:
-				'An experimental fungible token standard on Bitcoin making a non-fungible token (Ordinals), fungible.',
+			title: t('brc20.title'),
+			description: t('brc20.description'),
 			slug: 'brc-20',
 		},
 		{
 			id: 4,
-			title: 'Cursed Inscription',
-			description:
-				'When an inscription does not abide by the current Ordinal protocol standards that inscription is deemed as “cursed”.',
+			title: t('cursedInscription.title'),
+			description: t('cursedInscription.description'),
 			slug: 'cursed-inscription',
 		},
 		{
 			id: 5,
-			title: 'Digital Artifact',
-			description:
-				'Any digital asset that possesses characteristics of ownership, completeness, permissionlessness, uncensorability, and immutability.',
+			title: t('digitalArtifact.title'),
+			description: t('digitalArtifact.description'),
 			slug: 'digital-artifact',
 		},
 		{
 			id: 6,
-			title: 'Envelopes',
-			description:
-				"Inscription data is 'enveloped' in the Pay-to-Taproot tapscript of a Bitcoin transaction.",
+			title: t('envelopes.title'),
+			description: t('envelopes.description'),
 			slug: 'envelopes',
 		},
 		{
 			id: 7,
-			title: 'Exotic Rarity',
-			description:
-				'Subjective rarity attributes of sats based on unique characteristics like specific numbering patterns, naming or historical significance.',
+			title: t('exoticRarity.title'),
+			description: t('exoticRarity.description'),
 			slug: 'exotic-rarity',
 		},
 		{
 			id: 8,
-			title: 'Inscription',
-			description:
-				'Arbitrary content stored in a Bitcoin transaction during the creation of a digital artifact (akin to NFTs on Bitcoin).',
+			title: t('inscription.title'),
+			description: t('inscription.description'),
 			slug: 'inscription',
 		},
 		{
 			id: 9,
-			title: 'Inscription ID',
-			description:
-				'An inscription identifier includes the transaction ID of the reveal transaction (during creation of the inscription) and the index of the new inscription within that transaction.',
+			title: t('inscriptionID.title'),
+			description: t('inscriptionID.description'),
 			slug: 'inscription-id',
 		},
 		{
 			id: 10,
-			title: 'Indexer',
-			description:
-				'Indexers monitor ordinal numbers and their inscription data.',
+			title: t('indexer.title'),
+			description: t('indexer.description'),
 			slug: 'indexer',
 		},
 		{
 			id: 11,
-			title: 'Inscription Number',
-			description:
-				'The number assigned to an inscription based on its order of creation on the network.',
+			title: t('inscriptionNumber.title'),
+			description: t('inscriptionNumber.description'),
 			slug: 'inscription-number',
 		},
 		{
 			id: 12,
-			title: 'Operation Code (OpCode)',
-			description:
-				'An "Operation Code (OpCode)" in Bitcoin serves as a command or instruction within the Bitcoin scripting language known as Script. OpCodes are used within UTXOs for transaction validation and control of spending conditions.',
+			title: t('operationCodeOpCode.title'),
+			description: t('operationCodeOpCode.description'),
 			slug: 'operation-code-opcode',
 		},
 		{
 			id: 13,
-			title: 'Ord Client',
-			description:
-				'The open-source software that enables users to participate in the Ordinals protocol. Ord provides an ordinal indexing service, a block explorer, an inscription service, and a command-line wallet.',
+			title: t('ordClient.title'),
+			description: t('ordClient.description'),
 			slug: 'ord-client',
 		},
 		{
 			id: 14,
-			title: 'Ordinal Handbook',
-			description:
-				'Found at https://docs.ordinals.com, the Ordinals Handbook stands as a guide to Ordinal Theory.',
+			title: t('ordinalHandbook.title'),
+			description: t('ordinalHandbook.description'),
 			slug: 'ordinal-handbook',
 		},
 		{
 			id: 15,
-			title: 'Ordinals Protocol',
-			description:
-				'The Ordinals protocol is a system for storing and tracking digital assets (NFTs) on Bitcoin.',
+			title: t('ordinalsProtocol.title'),
+			description: t('ordinalsProtocol.description'),
 			slug: 'ordinals-protocol',
 		},
 		{
 			id: 16,
-			title: 'Ordinal Theory',
-			description:
-				'A scheme that serializes and tracks individual satoshis using ordinal numbers based on their order of creation.',
+			title: t('ordinalTheory.title'),
+			description: t('ordinalTheory.description'),
 			slug: 'ordinal-theory',
 		},
 		{
 			id: 17,
-			title: 'Provenance (Parent/Child)',
-			description:
-				'Provenance enables the holder of an inscription to demonstrate ownership and to create child entities that establish provenance on-chain.',
+			title: t('provenanceParentChild.title'),
+			description: t('provenanceParentChild.description'),
 			slug: 'provenance-parent-child',
 		},
 		{
 			id: 18,
-			title: 'Partially Signed Bitcoin Transaction (PSBT)',
-			description:
-				'Often used in ordinal marketplaces, PSBTs allow for the partial signing of a transaction. They wait for the second party (or multiple parties) to complete the transaction by agreeing to the conditions of the PSBT and broadcasting the transaction.',
+			title: t('partiallySignedBitcoinTransactionPSBT.title'),
+			description: t('partiallySignedBitcoinTransactionPSBT.description'),
 			slug: 'partially-signed-bitcoin-transaction-psbt',
 		},
 		{
 			id: 19,
-			title: 'Pay-to-Taproot (P2TR)',
-			description:
-				'Pay-to-Taproot is a type of Bitcoin transaction output introduced with the Taproot update in November 2021.',
+			title: t('payToTaprootP2TR.title'),
+			description: t('payToTaprootP2TR.description'),
 			slug: 'pay-to-taproot-p2tr',
 		},
 		{
 			id: 20,
-			title: 'Recursion',
-			description:
-				'A method allowing inscriptions to reference the content of other inscriptions, minimizing data size while preserving content access.',
+			title: t('recursion.title'),
+			description: t('recursion.description'),
 			slug: 'recursion',
 		},
 		{
 			id: 21,
-			title: 'Satoshi Numbers (also known as Ordinal Numbers)',
-			description:
-				'The serialization of satoshis, assigned in the order in which they are created; these numbers are preserved across transactions.',
+			title: t('satoshiNumbers.title'),
+			description: t('satoshiNumbers.description'),
 			slug: 'satoshi-numbers',
 		},
 		{
 			id: 22,
-			title: 'Reinscription',
-			description:
-				'Attaching additional inscription data to an already inscribed satoshi.',
+			title: t('reinscription.title'),
+			description: t('reinscription.description'),
 			slug: 'reinscription',
 		},
 		{
 			id: 23,
-			title: 'Rodamor Rarity',
-			description:
-				"A classification system for sat rarity based on Bitcoin's periodic events, as defined by Casey Rodarmor.",
+			title: t('rodamorRarity.title'),
+			description: t('rodamorRarity.description'),
 			slug: 'rodamor-rarity',
 		},
 		{
 			id: 24,
-			title: 'Satoshi',
-			description:
-				'The smallest unit of Bitcoin, equivalent to 0.00000001 BTC.',
+			title: t('satoshi.title'),
+			description: t('satoshi.description'),
 			slug: 'satoshi',
 		},
 		{
 			id: 25,
-			title: 'Sat Hunting',
-			description:
-				'The practice of searching for and identifying rare sats based on their historical or ordinal significance.',
+			title: t('satHunting.title'),
+			description: t('satHunting.description'),
 			slug: 'sat-hunting',
 		},
 		{
 			id: 26,
-			title: 'Sat Name',
-			description:
-				'A unique identifier for each satoshi derived from its satoshi number using Base26 (alphabetical) conversion.',
+			title: t('satName.title'),
+			description: t('satName.description'),
 			slug: 'sat-name',
 		},
 		{
 			id: 27,
-			title: 'Segwit',
-			description:
-				"Launched in August 2017, designed to reduce transaction data size by separating certain data from the transaction signature. It is in this segregated area that arbitrary messages can be stored. This feature is available with any SegWit address, which starts with '3' or 'bc1q'.",
+			title: t('segwit.title'),
+			description: t('segwit.description'),
 			slug: 'segwit',
 		},
 		{
 			id: 28,
-			title: 'Teleburn',
-			description:
-				'The process of burning an NFT on its original chain of creation, followed by inscribing the same content onto the Bitcoin blockchain.',
+			title: t('teleburn.title'),
+			description: t('teleburn.description'),
 			slug: 'teleburn',
 		},
 		{
 			id: 29,
-			title: 'Taproot',
-			description:
-				"Launched in November 2021 with the aim of improving security, efficiency, and scalability. Taproot scripts offer the advantage of having very few restrictions on their content. Additionally, they benefit from the witness discount, making the storage of inscription content relatively economical. Addresses related to Taproot start with 'bc1p'.",
+			title: t('taproot.title'),
+			description: t('taproot.description'),
 			slug: 'taproot',
 		},
 		{
 			id: 30,
-			title: 'Unspent Transaction Output (UTXO)',
-			description:
-				'Instead of account balances, Bitcoin uses UTXOs to track the location of coins on the network. To spend a UTXO, you must provide a signature to prove you own the private key corresponding to that address.',
+			title: t('utxo.title'),
+			description: t('utxo.description'),
 			slug: 'unspent-transaction-output-utxo',
 		},
 	];
@@ -306,7 +286,7 @@ export default function Glossary() {
 						</h1>
 						<p className="text-xl font-normal leading-[1.45] text-base">
 							Your one-stop guide to understand the language in
-							Ordinals
+							Ordinals.
 						</p>
 					</div>
 					<div className="relative overflow-hidden text-center max-w-[500px] rounded-lg mt-6 md:mt-0">
@@ -355,3 +335,9 @@ export default function Glossary() {
 		</div>
 	);
 }
+
+export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
+	props: {
+		...(await serverSideTranslations(locale ?? 'en', ['common', 'footer'])),
+	},
+});

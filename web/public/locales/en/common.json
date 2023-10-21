@@ -12,19 +12,124 @@
 	"videoLengthSuffix": "m",
 	"skillLevel": "Intermediate",
 	"Free Bitcoin Ordinals Education": "Free Bitcoin Ordinals Education",
-
-	"bitcoinNode": "Bitcoin Node",
-	"bitcoinNodeDesc": "A system that runs the Bitcoin Core software, validating transactions and blocks on the blockchain while ensuring adherence to the network's consensus rules.",
-
-	"bitcoinProtocol": "Bitcoin Protocol",
-	"bitcoinProtocolDesc": "The decentralized system that governs the creation, transmission, and verification of Bitcoin transactions.",
-
-	"brc20": "BRC-20",
-	"brc20Desc": "An experimental fungible token standard on Bitcoin making a non-fungible token (Ordinals), fungible.",
-
-	"cursedInscription": "Cursed Inscription",
-	"cursedInscriptionDesc": "When an inscription does not abide by the current Ordinal protocol standards that inscription is deemed as “cursed”.",
-
-	"digitalArtifact": "Digital Artifact",
-	"digitalArtifactDesc": "Any digital asset that possesses characteristics of ownership, completeness, permissionlessness, uncensorability, and immutability."
+	"bitcoinNode": {
+		"title": "Bitcoin Node",
+		"description": "A system that runs the Bitcoin Core software, validating transactions and blocks on the blockchain while ensuring adherence to the network's consensus rules."
+	},
+	"bitcoinProtocol": {
+		"title": "Bitcoin Protocol",
+		"description": "The decentralized system that governs the creation, transmission, and verification of Bitcoin transactions."
+	},
+	"brc20": {
+		"title": "BRC-20",
+		"description": "An experimental fungible token standard on Bitcoin making a non-fungible token (Ordinals), fungible."
+	},
+	"cursedInscription": {
+		"title": "Cursed Inscription",
+		"description": "When an inscription does not abide by the current Ordinal protocol standards that inscription is deemed as “cursed”."
+	},
+	"digitalArtifact": {
+		"title": "Digital Artifact",
+		"description": "Any digital asset that possesses characteristics of ownership, completeness, permissionlessness, uncensorability, and immutability."
+	},
+	"envelopes": {
+		"title": "Envelopes",
+		"description": "Inscription data is 'enveloped' in the Pay-to-Taproot tapscript of a Bitcoin transaction."
+	},
+	"exoticRarity": {
+		"title": "Exotic Rarity",
+		"description": "Subjective rarity attributes of sats based on unique characteristics like specific numbering patterns, naming or historical significance."
+	},
+	"inscription": {
+		"title": "Inscription",
+		"description": "Arbitrary content stored in a Bitcoin transaction during the creation of a digital artifact (akin to NFTs on Bitcoin)."
+	},
+	"inscriptionID": {
+		"title": "Inscription ID",
+		"description": "An inscription identifier includes the transaction ID of the reveal transaction (during creation of the inscription) and the index of the new inscription within that transaction."
+	},
+	"indexer": {
+		"title": "Indexer",
+		"description": "Indexers monitor ordinal numbers and their inscription data."
+	},
+	"inscriptionNumber": {
+		"title": "Inscription Number",
+		"description": "The number assigned to an inscription based on its order of creation on the network."
+	},
+	"operationCodeOpCode": {
+		"title": "Operation Code (OpCode)",
+		"description": "An \"Operation Code (OpCode)\" in Bitcoin serves as a command or instruction within the Bitcoin scripting language known as Script. OpCodes are used within UTXOs for transaction validation and control of spending conditions."
+	},
+	"ordClient": {
+		"title": "Ord Client",
+		"description": "The open-source software that enables users to participate in the Ordinals protocol. Ord provides an ordinal indexing service, a block explorer, an inscription service, and a command-line wallet."
+	},
+	"ordinalHandbook": {
+		"title": "Ordinal Handbook",
+		"description": "Found at https://docs.ordinals.com, the Ordinals Handbook stands as a guide to Ordinal Theory."
+	},
+	"ordinalsProtocol": {
+		"title": "Ordinals Protocol",
+		"description": "The Ordinals protocol is a system for storing and tracking digital assets (NFTs) on Bitcoin."
+	},
+	"ordinalTheory": {
+		"title": "Ordinal Theory",
+		"description": "A scheme that serializes and tracks individual satoshis using ordinal numbers based on their order of creation."
+	},
+	"provenanceParentChild": {
+		"title": "Provenance (Parent/Child)",
+		"description": "Provenance enables the holder of an inscription to demonstrate ownership and to create child entities that establish provenance on-chain."
+	},
+	"partiallySignedBitcoinTransactionPSBT": {
+		"title": "Partially Signed Bitcoin Transaction (PSBT)",
+		"description": "Often used in ordinal marketplaces, PSBTs allow for the partial signing of a transaction. They wait for the second party (or multiple parties) to complete the transaction by agreeing to the conditions of the PSBT and broadcasting the transaction."
+	},
+	"payToTaprootP2TR": {
+		"title": "Pay-to-Taproot (P2TR)",
+		"description": "Pay-to-Taproot is a type of Bitcoin transaction output introduced with the Taproot update in November 2021."
+	},
+	"recursion": {
+		"title": "Recursion",
+		"description": "A method allowing inscriptions to reference the content of other inscriptions, minimizing data size while preserving content access."
+	},
+	"satoshiNumbers": {
+		"title": "Satoshi Numbers (also known as Ordinal Numbers)",
+		"description": "The serialization of satoshis, assigned in the order in which they are created; these numbers are preserved across transactions."
+	},
+	"reinscription": {
+		"title": "Reinscription",
+		"description": "Attaching additional inscription data to an already inscribed satoshi."
+	},
+	"rodamorRarity": {
+		"title": "Rodamor Rarity",
+		"description": "A classification system for sat rarity based on Bitcoin's periodic events, as defined by Casey Rodarmor."
+	},
+	"satoshi": {
+		"title": "Satoshi",
+		"description": "The smallest unit of Bitcoin, equivalent to 0.00000001 BTC."
+	},
+	"satHunting": {
+		"title": "Sat Hunting",
+		"description": "The practice of searching for and identifying rare sats based on their historical or ordinal significance."
+	},
+	"satName": {
+		"title": "Sat Name",
+		"description": "A unique identifier for each satoshi derived from its satoshi number using Base26 (alphabetical) conversion."
+	},
+	"segwit": {
+		"title": "Segwit",
+		"description": "Launched in August 2017, designed to reduce transaction data size by separating certain data from the transaction signature. It is in this segregated area that arbitrary messages can be stored. This feature is available with any SegWit address, which starts with '3' or 'bc1q'."
+	},
+	"teleburn": {
+		"title": "Teleburn",
+		"description": "The process of burning an NFT on its original chain of creation, followed by inscribing the same content onto the Bitcoin blockchain."
+	},
+	"taproot": {
+		"title": "Taproot",
+		"description": "Launched in November 2021 with the aim of improving security, efficiency, and scalability. Taproot scripts offer the advantage of having very few restrictions on their content. Additionally, they benefit from the witness discount, making the storage of inscription content relatively economical. Addresses related to Taproot start with 'bc1p'."
+	},
+	"utxo": {
+		"title": "Unspent Transaction Output (UTXO)",
+		"description": "Instead of account balances, Bitcoin uses UTXOs to track the location of coins on the network. To spend a UTXO, you must provide a signature to prove you own the private key corresponding to that address."
+	}
 }

@@ -1,7 +1,6 @@
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
-
-import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 import Hero from '@/components/Hero';
 
 type Props = {
