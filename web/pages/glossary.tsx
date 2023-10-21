@@ -313,9 +313,8 @@ export default function Glossary() {
 						<Image
 							src={FrankenImage.src}
 							alt="Bitcoin Ordinals Terminology"
-							width={200}
-							height={200}
-							layout="responsive"
+							width={500}
+							height={500}
 						/>
 					</div>
 				</div>

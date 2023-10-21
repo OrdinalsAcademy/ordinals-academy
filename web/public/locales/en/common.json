@@ -11,5 +11,20 @@
 	"datePrefix": "Oct",
 	"videoLengthSuffix": "m",
 	"skillLevel": "Intermediate",
-	"Free Bitcoin Ordinals Education": "Free Bitcoin Ordinals Education"
+	"Free Bitcoin Ordinals Education": "Free Bitcoin Ordinals Education",
+
+	"bitcoinNode": "Bitcoin Node",
+	"bitcoinNodeDesc": "A system that runs the Bitcoin Core software, validating transactions and blocks on the blockchain while ensuring adherence to the network's consensus rules.",
+
+	"bitcoinProtocol": "Bitcoin Protocol",
+	"bitcoinProtocolDesc": "The decentralized system that governs the creation, transmission, and verification of Bitcoin transactions.",
+
+	"brc20": "BRC-20",
+	"brc20Desc": "An experimental fungible token standard on Bitcoin making a non-fungible token (Ordinals), fungible.",
+
+	"cursedInscription": "Cursed Inscription",
+	"cursedInscriptionDesc": "When an inscription does not abide by the current Ordinal protocol standards that inscription is deemed as “cursed”.",
+
+	"digitalArtifact": "Digital Artifact",
+	"digitalArtifactDesc": "Any digital asset that possesses characteristics of ownership, completeness, permissionlessness, uncensorability, and immutability."
 }
