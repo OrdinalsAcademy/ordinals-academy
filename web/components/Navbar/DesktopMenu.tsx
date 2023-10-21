@@ -6,13 +6,13 @@ import LanguageSwitcher from '../LanguageSwitcher';
 
 const navItems = [
 	{ name: 'Glossary', href: '/glossary' },
-	{ name: 'Articles', href: '/articles' },
-	{ name: 'Courses', href: '/courses' },
+	// { name: 'Articles', href: '/articles' },
+	// { name: 'Courses', href: '/courses' },
 ];
 
 const NavItem = ({ item }: any) => (
 	<Link href={item.href}>
-		<span className="cursor-pointer block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black hover:text-customBitcoin mr-4 dark:text-customWhite dark:hover:text-customBitcoin">
+		<span className="cursor-pointer block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black hover:text-customBitcoin ml-4 dark:text-customWhite dark:hover:text-customBitcoin">
 			{item.name}
 		</span>
 	</Link>
