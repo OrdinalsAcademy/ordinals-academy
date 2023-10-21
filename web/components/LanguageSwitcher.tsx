@@ -67,7 +67,7 @@ export default function LanguageSwitcher() {
 			<div
 				className={
 					showDropdown
-						? 'absolute right-0 mt-5 w-60 divide-y divide-gray-100 rounded block text-center bg-customWhite dark:bg-customDark dark:text-customWhite'
+						? 'absolute right-0 mt-5 w-60 divide-y divide-gray-100 rounded block text-center bg-customWhite dark:bg-customDark dark:text-customWhite z-10'
 						: 'hidden'
 				}
 			>
