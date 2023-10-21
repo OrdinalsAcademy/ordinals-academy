@@ -326,7 +326,7 @@ export default function Glossary() {
 				style={{ height: '40px', width: '100%' }}
 			></div>
 			<div
-				className={`p-4 mx-auto sticky top-0 z-10 w-full items-center justify-center flex transition-all ${
+				className={`p-4 mx-auto sticky top-0 z-9 w-full items-center justify-center flex transition-all ${
 					isAtTop ? 'bg-customGray text-white' : ''
 				}`}
 			>
