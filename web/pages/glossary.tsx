@@ -282,11 +282,10 @@ export default function Glossary(
 				<div className="flex items-center grid grid-cols-1 md:grid-cols-2 gap-8 grid-rows-auto">
 					<div className="md:ml-20 px-6 md:px-20">
 						<h1 className="text-3xl md:text-4xl leading-18 mb-4 font-semibold">
-							Bitcoin Ordinals Terminology
+							{t('terminologyHeader.title')}
 						</h1>
 						<p className="text-xl font-normal leading-[1.45] text-base">
-							Your one-stop guide to understand the language in
-							Ordinals.
+							{t('terminologyHeader.description')}
 						</p>
 					</div>
 					<div className="relative overflow-hidden text-center max-w-[500px] rounded-lg mt-6 md:mt-0">

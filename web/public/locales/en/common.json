@@ -12,6 +12,10 @@
 	"videoLengthSuffix": "m",
 	"skillLevel": "Intermediate",
 	"Free Bitcoin Ordinals Education": "Free Bitcoin Ordinals Education",
+	"terminologyHeader": {
+		"title": "Bitcoin Ordinals Terminology",
+		"description": "Your one-stop guide to understand the language in Ordinals."
+	},
 	"bitcoinNode": {
 		"title": "Bitcoin Node",
 		"description": "A system that runs the Bitcoin Core software, validating transactions and blocks on the blockchain while ensuring adherence to the network's consensus rules."
