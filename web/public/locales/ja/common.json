@@ -11,5 +11,129 @@
 	"datePrefix": "10月",
 	"videoLengthSuffix": "分",
 	"skillLevel": "中級",
-	"Free Bitcoin Ordinals Education": "無料のビットコイン・オーディナルズ教育"
+	"Free Bitcoin Ordinals Education": "無料のビットコイン・オーディナルズ教育",
+	"terminologyHeader": {
+		"title": "Bitcoin Ordinals 用語集",
+		"description": "Ordinalsの言語を理解するためのワンストップガイド。"
+	},
+	"bitcoinNode": {
+		"title": "Bitcoin ノード",
+		"description": "Bitcoin Core ソフトウェアを実行するシステムで、ブロックチェーン上のトランザクションとブロックを検証し、ネットワークの合意ルールを遵守します。"
+	},
+	"bitcoinProtocol": {
+		"title": "Bitcoin プロトコル",
+		"description": "Bitcoin トランザクションの作成、伝送、および検証を統治する分散システム。"
+	},
+	"brc20": {
+		"title": "BRC-20",
+		"description": "Bitcoin上で非代替可能トークン(Ordinals)を代替可能にする実験的な代替可能トークン標準。"
+	},
+	"cursedInscription": {
+		"title": "呪われたインスクリプション",
+		"description": "インスクリプションが現在のOrdinalプロトコルの標準に従わない場合、そのインスクリプションは「呪われた」とみなされます。"
+	},
+	"digitalArtifact": {
+		"title": "デジタルアーティファクト",
+		"description": "所有権、完全性、許可不要、検閲不可、および不変性の特性を持つデジタル資産。"
+	},
+	"envelopes": {
+		"title": "封筒",
+		"description": "インスクリプションデータはBitcoinトランザクションのPay-to-Taproot tapscriptに「封入」されます。"
+	},
+	"exoticRarity": {
+		"title": "エキゾチックレアリティ",
+		"description": "特定の番号付けパターン、命名、または歴史的意義のような独特の特性に基づくsatsの主観的なレアリティ属性。"
+	},
+	"inscription": {
+		"title": "インスクリプション",
+		"description": "デジタルアーティファクトの作成中にBitcoinトランザクションに格納される任意のコンテンツ（Bitcoin上のNFTに似ています）。"
+	},
+	"inscriptionID": {
+		"title": "インスクリプションID",
+		"description": "インスクリプション識別子には、明らかにされるトランザクションのトランザクションID（インスクリプションの作成中）およびそのトランザクション内の新しいインスクリプションのインデックスが含まれます。"
+	},
+	"indexer": {
+		"title": "インデクサ",
+		"description": "インデクサは序数とそのインスクリプションデータを監視します。"
+	},
+	"inscriptionNumber": {
+		"title": "インスクリプション番号",
+		"description": "ネットワーク上での作成の順番に基づいてインスクリプションに割り当てられた番号。"
+	},
+	"operationCodeOpCode": {
+		"title": "オペレーションコード (OpCode)",
+		"description": "Bitcoinの\"オペレーションコード (OpCode)\"は、Scriptとして知られるBitcoinスクリプト言語内のコマンドまたは指示として機能します。OpCodesは、UTXO内でトランザクションの検証と支出条件の制御のために使用されます。"
+	},
+	"ordClient": {
+		"title": "Ord クライアント",
+		"description": "ユーザーがOrdinalsプロトコルに参加できるようにするオープンソースソフトウェア。Ordは、序数インデックスサービス、ブロックエクスプローラー、インスクリプションサービス、およびコマンドラインウォレットを提供します。"
+	},
+	"ordinalHandbook": {
+		"title": "Ordinal ハンドブック",
+		"description": "https://docs.ordinals.com で見られるOrdinalsハンドブックは、Ordinal Theoryのガイドとして立っています。"
+	},
+	"ordinalsProtocol": {
+		"title": "Ordinals プロトコル",
+		"description": "Ordinalsプロトコルは、Bitcoin上でデジタル資産（NFT）を保存および追跡するシステムです。"
+	},
+	"ordinalTheory": {
+		"title": "Ordinal 理論",
+		"description": "作成の順番に基づいて個々のサトシを序数を使用してシリアル化および追跡するスキーム。"
+	},
+	"provenanceParentChild": {
+		"title": "起源 (親/子)",
+		"description": "Provenanceは、インスクリプションの保有者が所有権を示し、チェーン上での起源を確立する子エンティティを作成することを可能にします。"
+	},
+	"partiallySignedBitcoinTransactionPSBT": {
+		"title": "部分的に署名されたBitcoinトランザクション (PSBT)",
+		"description": "ordinalマーケットプレイスでよく使用されるPSBTは、トランザクションの部分的な署名を許可します。PSBTの条件に同意してトランザクションを放送することで、2番目の当事者（または複数の当事者）がトランザクションを完了するのを待ちます。"
+	},
+	"payToTaprootP2TR": {
+		"title": "Pay-to-Taproot (P2TR)",
+		"description": "Pay-to-Taprootは、2021年11月のTaprootアップデートで導入されたBitcoinトランザクション出力のタイプです。"
+	},
+	"recursion": {
+		"title": "再帰",
+		"description": "データサイズを最小限に抑えつつ、コンテンツへのアクセスを維持するための方法として、インスクリプションが他のインスクリプションのコンテンツを参照することを可能にします。"
+	},
+	"satoshiNumbers": {
+		"title": "サトシ番号 (または序数として知られる)",
+		"description": "サトシのシリアル化は、それらが作成される順序で割り当てられます; これらの数字はトランザクション全体で保存されます。"
+	},
+	"reinscription": {
+		"title": "再登録",
+		"description": "既に記述されたサトシに追加のインスクリプションデータを添付します。"
+	},
+	"rodamorRarity": {
+		"title": "Rodamorの希少性",
+		"description": "Casey Rodarmorによって定義された、Bitcoinの定期的なイベントに基づくサト希少性の分類システム。"
+	},
+	"satoshi": {
+		"title": "サトシ",
+		"description": "Bitcoinの最小単位で、0.00000001 BTCに相当します。"
+	},
+	"satHunting": {
+		"title": "Satハンティング",
+		"description": "その歴史的または序数的な意義に基づいて希少なsatsを探し、識別する実践。"
+	},
+	"satName": {
+		"title": "Sat名",
+		"description": "Base26（アルファベット）変換を使用して、そのサトシ番号から導き出される各サトシのユニークな識別子。"
+	},
+	"segwit": {
+		"title": "Segwit",
+		"description": "2017年8月に導入され、トランザクション署名から特定のデータを分離することでトランザクションデータサイズを削減するように設計されました。任意のメッセージを保存できるこの分離されたエリアです。この機能は、'3'または'bc1q'で始まる任意のSegWitアドレスで利用できます。"
+	},
+	"teleburn": {
+		"title": "Teleburn",
+		"description": "NFTをその元の作成チェーンで燃やすプロセスに続いて、同じコンテンツをBitcoinブロックチェーンに記録すること。"
+	},
+	"taproot": {
+		"title": "タップルート",
+		"description": "2021年11月にセキュリティ、効率、およびスケーラビリティを向上させることを目的として導入されました。Taprootスクリプトは、コンテンツに非常に少ない制限があるという利点を持っています。さらに、彼らは証人の割引の恩恵を受けており、インスクリプションコンテンツの保存が比較的経済的です。タップルートに関連するアドレスは「bc1p」で始まります。"
+	},
+	"utxo": {
+		"title": "未使用のトランザクション出力 (UTXO)",
+		"description": "アカウントの残高の代わりに、BitcoinはUTXOsを使用してネットワーク上のコインの位置を追跡します。UTXOを使うには、そのアドレスに対応する秘密鍵を所有していることを証明する署名を提供する必要があります。"
+	}
 }
