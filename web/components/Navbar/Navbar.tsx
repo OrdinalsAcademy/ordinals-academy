@@ -5,10 +5,10 @@ export default function NavBar() {
 	return (
 		<nav>
 			<div
-				className={`top-0 w-full flex justify-center z-30 transition-all bg-customDark`}
+				className={`top-0 w-full flex justify-center z-30 bg-customWhite dark:bg-customDark`}
 			>
 				<div className="mx-5 flex h-16 items-center justify-between w-full">
-					{/* <MobileMenu /> */}
+					<MobileMenu />
 					<DesktopMenu />
 				</div>
 			</div>

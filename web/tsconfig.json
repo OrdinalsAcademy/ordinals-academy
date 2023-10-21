@@ -6,6 +6,7 @@
 		"baseUrl": ".",
 		"paths": {
 			"@/components/*": ["components/*"],
+			"@/providers/*": ["providers/*"],
 			"@/styles/*": ["styles/*"]
 		},
 		"allowJs": true,
