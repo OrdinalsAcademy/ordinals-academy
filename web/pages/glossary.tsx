@@ -282,7 +282,7 @@ export default function Glossary() {
 				{terms.map((term: any) => (
 					<div
 						key={term.id}
-						className="p-5 mb-2 hover:bg-customDarker hover:cursor-pointer rounded-[10px]"
+						className="p-5 mb-2 hover:bg-white hover:dark:bg-customDarker hover:cursor-pointer rounded-[10px]"
 					>
 						{/* todo <Link href={`/glossary/${term.slug}`}> */}
 						<h2 className="mb-3 font-semibold text-2xl leading-10">
@@ -297,14 +297,14 @@ export default function Glossary() {
 	);
 
 	return (
-		<div className="min-h-screen flex flex-col pb-20 justify-center items-center bg-center bg-no-repeat bg-cover bg-white dark:bg-customDark text-black dark:text-white">
-			<div className="py-20 px-6 md:px-20 w-full mx-auto dark:bg-customDarker items-center justify-center">
+		<div className="min-h-screen flex flex-col pb-20 justify-center items-center bg-center bg-no-repeat bg-cover bg-customWhite text-black dark:bg-customDark dark:text-white">
+			<div className="py-20 px-6 md:px-20 w-full mx-auto bg-white dark:bg-customDarker items-center justify-center">
 				<div className="flex items-center grid grid-cols-1 md:grid-cols-2 gap-8 grid-rows-auto">
 					<div className="md:ml-20 px-6 md:px-20">
-						<h1 className="text-3xl md:text-4xl leading-18 mb-4 text-[#e6e8ea] font-semibold">
+						<h1 className="text-3xl md:text-4xl leading-18 mb-4 font-semibold">
 							Bitcoin Ordinals Terminology
 						</h1>
-						<p className="text-xl text-[#e6e8ea] font-normal leading-[1.45] text-base">
+						<p className="text-xl font-normal leading-[1.45] text-base">
 							Your one-stop guide to understand the language in
 							Ordinals
 						</p>
@@ -327,7 +327,7 @@ export default function Glossary() {
 			></div>
 			<div
 				className={`p-4 mx-auto sticky top-0 z-10 w-full items-center justify-center flex transition-all ${
-					isAtTop ? 'bg-customGray' : ''
+					isAtTop ? 'bg-customGray text-white' : ''
 				}`}
 			>
 				<div className="max-w-[1136px] items-center grid grid-cols-1 grid-rows-auto">
