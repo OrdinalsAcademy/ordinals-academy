@@ -11,5 +11,53 @@
 	"datePrefix": "10월",
 	"videoLengthSuffix": "분",
 	"skillLevel": "중급",
-	"Free Bitcoin Ordinals Education": "무료 비트코인 오디널스 교육"
+	"Free Bitcoin Ordinals Education": "무료 비트코인 오디널스 교육",
+	"terminologyHeader": {
+		"title": "비트코인 Ordinals 용어",
+		"description": "Ordinals에서 언어를 이해하기 위한 원스톱 가이드."
+	},
+	"bitcoinNode": {
+		"title": "비트코인 노드",
+		"description": "비트코인 코어 소프트웨어를 실행하는 시스템으로, 블록체인의 거래와 블록을 유효성 검사하며 네트워크의 합의 규칙을 준수합니다."
+	},
+	"bitcoinProtocol": {
+		"title": "비트코인 프로토콜",
+		"description": "비트코인 거래의 생성, 전송 및 검증을 지배하는 분산 시스템."
+	},
+	"brc20": {
+		"title": "BRC-20",
+		"description": "비트코인에서 비교가능한 토큰(Ordinals)을 교환 가능하게 만드는 실험적 교환 가능한 토큰 표준."
+	},
+	"cursedInscription": {
+		"title": "저주받은 인스크립션",
+		"description": "인스크립션이 현재 Ordinal 프로토콜 표준을 준수하지 않으면 “저주받은” 것으로 간주됩니다."
+	},
+	"digitalArtifact": {
+		"title": "디지털 아티팩트",
+		"description": "소유, 완전성, 허가 없음, 검열 불가 및 변경 불가의 특성을 가진 모든 디지털 자산."
+	},
+	"envelopes": {
+		"title": "봉투",
+		"description": "인스크립션 데이터는 비트코인 거래의 Pay-to-Taproot 탭스크립트에 '봉투'됩니다."
+	},
+	"exoticRarity": {
+		"title": "특이한 희귀성",
+		"description": "특정 번호 패턴, 명명 또는 역사적 중요성과 같은 고유한 특성을 기반으로 한 sats의 주관적 희귀성 속성."
+	},
+	"inscription": {
+		"title": "인스크립션",
+		"description": "디지털 아티팩트(비트코인의 NFT와 유사)를 생성하는 동안 비트코인 거래에 저장된 임의의 내용."
+	},
+	"inscriptionID": {
+		"title": "인스크립션 ID",
+		"description": "인스크립션 식별자는 인스크립션 생성 중 공개 거래의 거래 ID와 해당 거래 내 새 인스크립션의 인덱스를 포함합니다."
+	},
+	"indexer": {
+		"title": "인덱서",
+		"description": "인덱서는 서수 번호와 그들의 인스크립션 데이터를 모니터링합니다."
+	},
+	"inscriptionNumber": {
+		"title": "인스크립션 번호",
+		"description": "네트워크에서 생성 순서를 기반으로 인스크립션에 할당된 번호."
+	}
 }

@@ -11,5 +11,129 @@
 	"datePrefix": "Okt",
 	"videoLengthSuffix": "m",
 	"skillLevel": "Gemiddeld",
-	"Free Bitcoin Ordinals Education": "Gratis Bitcoin Ordinals Onderwijs"
+	"Free Bitcoin Ordinals Education": "Gratis Bitcoin Ordinals Onderwijs",
+	"terminologyHeader": {
+		"title": "Bitcoin Ordinals Terminologie",
+		"description": "Jouw gids om de taal in Ordinals te begrijpen."
+	},
+	"bitcoinNode": {
+		"title": "Bitcoin Node",
+		"description": "Een systeem dat de Bitcoin Core software draait, valideert transacties en blokken op de blockchain terwijl het zorgt voor naleving van de consensusregels van het netwerk."
+	},
+	"bitcoinProtocol": {
+		"title": "Bitcoin Protocol",
+		"description": "Het gedecentraliseerde systeem dat de creatie, overdracht en verificatie van Bitcoin transacties regelt."
+	},
+	"brc20": {
+		"title": "BRC-20",
+		"description": "Een experimentele fungibele token standaard op Bitcoin die een niet-fungibele token (Ordinals) fungibel maakt."
+	},
+	"cursedInscription": {
+		"title": "Vervloekte Inschrijving",
+		"description": "Wanneer een inschrijving niet voldoet aan de huidige Ordinal protocolnormen wordt die inschrijving als 'vervloekt' beschouwd."
+	},
+	"digitalArtifact": {
+		"title": "Digitaal Artefact",
+		"description": "Elk digitaal bezit dat kenmerken heeft van eigendom, volledigheid, toestemmingsloosheid, oncensureerbaarheid en onveranderlijkheid."
+	},
+	"envelopes": {
+		"title": "Enveloppen",
+		"description": "Inscriptiegegevens zijn 'omhuld' in het Pay-to-Taproot tapscript van een Bitcoin transactie."
+	},
+	"exoticRarity": {
+		"title": "Exotische Zeldzaamheid",
+		"description": "Subjectieve zeldzaamheid attributen van sats gebaseerd op unieke kenmerken zoals specifieke nummeringspatronen, benaming of historische betekenis."
+	},
+	"inscription": {
+		"title": "Inscriptie",
+		"description": "Willekeurige inhoud opgeslagen in een Bitcoin transactie tijdens het creëren van een digitaal artefact (vergelijkbaar met NFT's op Bitcoin)."
+	},
+	"inscriptionID": {
+		"title": "Inscriptie ID",
+		"description": "Een inscriptie-identificatie omvat de transactie-ID van de onthullingstransactie (tijdens het creëren van de inscriptie) en de index van de nieuwe inscriptie binnen die transactie."
+	},
+	"indexer": {
+		"title": "Indexeerder",
+		"description": "Indexeerders monitoren ordinale nummers en hun inscriptiegegevens."
+	},
+	"inscriptionNumber": {
+		"title": "Inscriptienummer",
+		"description": "Het nummer toegewezen aan een inscriptie op basis van de volgorde van creatie op het netwerk."
+	},
+	"operationCodeOpCode": {
+		"title": "Operatiecode (OpCode)",
+		"description": "Een 'Operatiecode (OpCode)' in Bitcoin dient als een commando of instructie binnen de Bitcoin scripttaal bekend als Script. OpCodes worden gebruikt binnen UTXO's voor transactievalidatie en controle van bestedingsvoorwaarden."
+	},
+	"ordClient": {
+		"title": "Ord Client",
+		"description": "De open-source software waarmee gebruikers kunnen deelnemen aan het Ordinals-protocol. Ord biedt een ordinale indexeringsdienst, een block explorer, een inscriptiedienst en een command-line portemonnee."
+	},
+	"ordinalHandbook": {
+		"title": "Ordinal Handboek",
+		"description": "Te vinden op https://docs.ordinals.com, het Ordinals Handboek fungeert als een gids voor Ordinal Theory."
+	},
+	"ordinalsProtocol": {
+		"title": "Ordinals Protocol",
+		"description": "Het Ordinals protocol is een systeem voor het opslaan en volgen van digitale activa (NFT's) op Bitcoin."
+	},
+	"ordinalTheory": {
+		"title": "Ordinal Theorie",
+		"description": "Een schema dat satoshi's serialiseert en volgt met behulp van ordinale getallen op basis van hun volgorde van creatie."
+	},
+	"provenanceParentChild": {
+		"title": "Herkomst (Ouder/Kind)",
+		"description": "Herkomst stelt de houder van een inscriptie in staat om eigendom aan te tonen en kind-entiteiten te creëren die herkomst on-chain vaststellen."
+	},
+	"partiallySignedBitcoinTransactionPSBT": {
+		"title": "Gedeeltelijk Getekende Bitcoin Transactie (PSBT)",
+		"description": "Vaak gebruikt in ordinale marktplaatsen, PSBT's maken het gedeeltelijk tekenen van een transactie mogelijk. Ze wachten tot de tweede partij (of meerdere partijen) de transactie voltooit door akkoord te gaan met de voorwaarden van de PSBT en de transactie uit te zenden."
+	},
+	"payToTaprootP2TR": {
+		"title": "Betaal-naar-Taproot (P2TR)",
+		"description": "Pay-to-Taproot is een type Bitcoin-transactie-output geïntroduceerd met de Taproot-update in november 2021."
+	},
+	"recursion": {
+		"title": "Recursie",
+		"description": "Een methode waarmee inscripties naar de inhoud van andere inscripties kunnen verwijzen, waarbij de gegevensgrootte wordt geminimaliseerd terwijl de toegang tot inhoud behouden blijft."
+	},
+	"satoshiNumbers": {
+		"title": "Satoshi Nummers (ook bekend als Ordinale Nummers)",
+		"description": "De serialisatie van satoshi's, toegewezen in de volgorde waarin ze zijn gemaakt; deze nummers blijven behouden over transacties heen."
+	},
+	"reinscription": {
+		"title": "Herschrijving",
+		"description": "Het toevoegen van extra inscriptiegegevens aan een reeds ingeschreven satoshi."
+	},
+	"rodamorRarity": {
+		"title": "Rodamor Zeldzaamheid",
+		"description": "Een classificatiesysteem voor sat zeldzaamheid gebaseerd op periodieke gebeurtenissen van Bitcoin, zoals gedefinieerd door Casey Rodarmor."
+	},
+	"satoshi": {
+		"title": "Satoshi",
+		"description": "De kleinste eenheid van Bitcoin, gelijk aan 0.00000001 BTC."
+	},
+	"satHunting": {
+		"title": "Sat Jagen",
+		"description": "De praktijk van het zoeken en identificeren van zeldzame sats op basis van hun historische of ordinale betekenis."
+	},
+	"satName": {
+		"title": "Sat Naam",
+		"description": "Een unieke identifier voor elke satoshi afgeleid van zijn satoshi nummer met behulp van Base26 (alfabetische) conversie."
+	},
+	"segwit": {
+		"title": "Segwit",
+		"description": "Gelanceerd in augustus 2017, ontworpen om de grootte van transactiegegevens te verminderen door bepaalde gegevens te scheiden van de transactiehandtekening. In dit gescheiden gebied kunnen willekeurige berichten worden opgeslagen. Deze functie is beschikbaar met elk SegWit-adres, dat begint met '3' of 'bc1q'."
+	},
+	"teleburn": {
+		"title": "Teleburn",
+		"description": "Het proces van het verbranden van een NFT op zijn originele creatieketen, gevolgd door het inschrijven van dezelfde inhoud op de Bitcoin blockchain."
+	},
+	"taproot": {
+		"title": "Taproot",
+		"description": "Gelanceerd in november 2021 met het doel de beveiliging, efficiëntie en schaalbaarheid te verbeteren. Taproot scripts bieden het voordeel van zeer weinig beperkingen op hun inhoud. Bovendien profiteren ze van de getuigenkorting, waardoor de opslag van inscriptie-inhoud relatief economisch wordt. Adressen gerelateerd aan Taproot beginnen met 'bc1p'."
+	},
+	"utxo": {
+		"title": "Niet-uitgegeven Transactie-uitvoer (UTXO)",
+		"description": "In plaats van rekeningsaldi gebruikt Bitcoin UTXO's om de locatie van munten op het netwerk bij te houden. Om een UTXO uit te geven, moet u een handtekening leveren om te bewijzen dat u de privésleutel bezit die overeenkomt met dat adres."
+	}
 }
