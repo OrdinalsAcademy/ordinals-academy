@@ -12,7 +12,7 @@ const languages = [
 	{ code: 'es', label: 'Español' }, // Spanish
 	{ code: 'pt', label: 'Português' }, // Portuguese
 	{ code: 'fr', label: 'Français' }, // French
-	{ code: 'de', label: 'Deutsch' },
+	{ code: 'de', label: 'Deutsch' }, // German
 	{ code: 'nl', label: 'Nederlands' }, // Dutch
 ];
 
