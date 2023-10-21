@@ -7,8 +7,8 @@ const languages = [
 	{ code: 'zh', label: '中文' }, // Simplified Chinese
 	{ code: 'vn', label: 'Tiếng Việt' }, // Vietnamese
 	{ code: 'ru', label: 'Русский' }, // Russian
-	{ code: 'ja', label: '日本語' }, // Japanese
 	{ code: 'ko', label: '한국어' }, // Korean
+	{ code: 'ja', label: '日本語' }, // Japanese
 	{ code: 'es', label: 'Español' }, // Spanish
 	{ code: 'pt', label: 'Português' }, // Portuguese
 	{ code: 'fr', label: 'Français' }, // French
@@ -17,15 +17,32 @@ const languages = [
 ];
 
 export default function LanguageSwitcher() {
-	const { i18n } = useTranslation();
 	const [showDropdown, setShowDropdown] = useState(false);
+	const containerRef = useRef<any>(null);
+
+	useEffect(() => {
+		function handleOutsideClick(event: any) {
+			// If the dropdown is open and the click is outside the container, close the dropdown
+			if (showDropdown && !containerRef.current.contains(event.target)) {
+				setShowDropdown(false);
+			}
+		}
+
+		// Attach the click event listener
+		document.addEventListener('mousedown', handleOutsideClick);
+
+		// Cleanup the listener on component unmount
+		return () => {
+			document.removeEventListener('mousedown', handleOutsideClick);
+		};
+	}, [showDropdown]);
 
 	return (
 		<div
+			ref={containerRef}
 			className="relative inline-block p-4"
 			onMouseEnter={() => setShowDropdown(true)}
 		>
-			{/* World SVG Icon */}
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				className="h-5 w-5 cursor-pointer hover:text-customBitcoin"
@@ -46,7 +63,7 @@ export default function LanguageSwitcher() {
 			<div
 				className={
 					showDropdown
-						? 'absolute right-0 mt-5 w-60 divide-y divide-gray-100 rounded block text-center bg-white dark:bg-customDark dark:text-customWhite'
+						? 'absolute right-0 mt-5 w-60 divide-y divide-gray-100 rounded block text-center bg-customWhite dark:bg-customDark dark:text-customWhite'
 						: 'hidden'
 				}
 			>
@@ -60,15 +77,6 @@ export default function LanguageSwitcher() {
 						>
 							{lang.label}
 						</Link>
-						// <div
-						// 	key={lang.code}
-						// 	className="p-4 cursor-pointer hover:text-customBitcoin"
-						// 	onClick={() => {
-						// 		i18n.changeLanguage(lang.code);
-						// 		setShowDropdown(false); // Optional: Close dropdown on language select
-						// 	}}
-						// >
-						// </div>
 					))}
 				</div>
 			</div>
