@@ -1,5 +1,8 @@
 import { useTheme } from '@/providers/ThemeProvider';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
+import LanguageSwitcher from '../LanguageSwitcher';
 
 const navItems = [
 	{ name: 'Glossary', href: '/glossary' },
@@ -9,7 +12,7 @@ const navItems = [
 
 const NavItem = ({ item }: any) => (
 	<Link href={item.href}>
-		<span className="cursor-pointer block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black hover:font-bold hover:text-customBitcoin mr-4 dark:text-customWhite dark:hover:text-customBitcoin dark:hover:font-bold">
+		<span className="cursor-pointer block mt-4 lg:inline-block lg:mt-0 text-black hover:text-black hover:text-customBitcoin mr-4 dark:text-customWhite dark:hover:text-customBitcoin">
 			{item.name}
 		</span>
 	</Link>
@@ -17,6 +20,22 @@ const NavItem = ({ item }: any) => (
 
 export default function DesktopMenu() {
 	const { theme, toggleTheme } = useTheme();
+	const { t, i18n } = useTranslation('common');
+
+	const router = useRouter();
+
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
+	const onToggleLanguageClick = (newLocale: string) => {
+		const { pathname, asPath, query } = router;
+		router.push({ pathname, query }, asPath, { locale: newLocale });
+	};
+
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
+	const clientSideLanguageChange = (newLocale: string) => {
+		i18n.changeLanguage(newLocale);
+	};
+
+	const changeTo = router.locale === 'en' ? 'de' : 'en';
 	return (
 		<div className="hidden lg:flex items-center justify-between w-full">
 			<Link href="/">
@@ -32,6 +51,11 @@ export default function DesktopMenu() {
 				{navItems.map((item) => (
 					<NavItem key={item.name} item={item} />
 				))}
+				{/* 
+				<Link href="/" locale={changeTo}>
+					<button>{t('change-locale', { changeTo })}</button>
+				</Link> */}
+				<LanguageSwitcher />
 				<button onClick={toggleTheme}>
 					{theme === 'dark' ? (
 						<svg

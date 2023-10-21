@@ -5,6 +5,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { useTranslation, Trans } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Header } from '../components/Header';
+import Hero from '@/components/Hero';
 
 type Props = {
 	// Add custom props here
@@ -14,6 +15,7 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 	const router = useRouter();
 	const { t, i18n } = useTranslation('common');
 
+	// alternative language switchers
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const onToggleLanguageClick = (newLocale: string) => {
 		const { pathname, asPath, query } = router;
@@ -30,8 +32,9 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 
 	return (
 		<>
-			<main className="bg-white text-black dark:bg-black dark:text-white">
+			<main className="w-full flex min-h-screen flex-col items-center justify-between bg-white dark:bg-customDark text-black dark:text-white">
 				{/* <Header heading={t('h1')} title={t('title')} /> */}
+				<Hero />
 				<div style={{ display: 'inline-flex', width: '90%' }}>
 					<div style={{ width: '33%' }}>
 						<h3 style={{ minHeight: 70 }}>
