@@ -11,7 +11,7 @@ module.exports = {
 		locales: [
 			'en',
 			'de',
-			'vn',
+			'vi',
 			'zh',
 			'ja',
 			'ko',

@@ -32,6 +32,31 @@ class MyDocument extends Document<Props> {
 						rel="icon"
 						href="https://github.githubassets.com/favicons/favicon.png"
 					/>
+					<link
+						rel="alternate"
+						hrefLang="x-default"
+						href="https://yourwebsite.com/"
+					/>
+					{[
+						'en',
+						'de',
+						'vi',
+						'zh',
+						'ja',
+						'ko',
+						'fr',
+						'es',
+						'pt',
+						'ru',
+						'nl',
+					].map((lang) => (
+						<link
+							key={lang}
+							rel="alternate"
+							hrefLang={lang}
+							href={`https://ordinalsacademy.org/${lang}`}
+						/>
+					))}
 				</Head>
 				<body>
 					<Main />

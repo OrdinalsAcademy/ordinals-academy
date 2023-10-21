@@ -5,7 +5,7 @@ import Link from 'next/link';
 const languages = [
 	{ code: 'en', label: 'English' },
 	{ code: 'zh', label: '中文' }, // Simplified Chinese
-	{ code: 'vn', label: 'Tiếng Việt' }, // Vietnamese
+	{ code: 'vi', label: 'Tiếng Việt' }, // Vietnamese
 	{ code: 'ru', label: 'Русский' }, // Russian
 	{ code: 'ko', label: '한국어' }, // Korean
 	{ code: 'ja', label: '日本語' }, // Japanese
