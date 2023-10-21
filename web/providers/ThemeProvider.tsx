@@ -20,10 +20,24 @@ interface ThemeProviderProps {
 }
 
 const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
-	const [theme, setTheme] = useState<Theme>('dark');
+	const [theme, setTheme] = useState<Theme>(() => {
+		if (typeof window !== 'undefined') {
+			const savedTheme = window.localStorage.getItem(
+				'theme'
+			) as Theme | null;
+			return savedTheme || 'dark'; // default to 'dark' if no theme is saved
+		}
+		return 'dark';
+	});
 
 	const toggleTheme = () => {
-		setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+		setTheme((prev) => {
+			const newTheme = prev === 'dark' ? 'light' : 'dark';
+			if (typeof window !== 'undefined') {
+				window.localStorage.setItem('theme', newTheme);
+			}
+			return newTheme;
+		});
 	};
 
 	useEffect(() => {
