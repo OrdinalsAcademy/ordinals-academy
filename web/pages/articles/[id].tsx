@@ -65,34 +65,76 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 					content={`${BASE_URL}/articles/${postData?.id}`}
 				/>
 			</Head>
-			<div className="flex items-center justify-between bg-customWhite text-customDark dark:bg-customDark dark:text-customWhite">
-				<article className="max-w-2xl mx-auto p-6 shadow-md">
-					<div className="space-y-4">
-						<h2 className="text-xl font-bold mb-2">TL;DR</h2>
-						<ul className="list-disc pl-6 space-y-2">
-							{/* ...You can map through a list of summary points here... */}
-							<li className="">Your summary point 1...</li>
-							{/* ... */}
-						</ul>
-						<div className="my-6">
-							<img
-								src={
-									'https://raw.githubusercontent.com/OrdinalsAcademy/ordinals-academy/main/web/public/professor_franken.jpg'
-								}
-								alt=""
-								className="w-full object-cover rounded-lg shadow-sm"
-							/>
-						</div>
-						<h1 className="text-3xl font-bold mb-4">
-							{postData?.title}
-						</h1>
-						<div
-							className="prose prose-sm prose-blue max-w-none dark:text-customWhite dark-mode-content"
-							dangerouslySetInnerHTML={{ __html: body ?? '' }}
-						></div>
-						{/* ...You can continue with the rest of your article structure... */}
+			<div className="flex items-center justify-center p-20 pt-0 pb-0 bg-customWhite text-customDark dark:bg-customDark dark:text-customWhite">
+				<div className="flex flex-row">
+					<div>
+						<article className="max-w-2xl mx-auto p-6 shadow-md">
+							<div className="space-y-4">
+								<h2 className="text-xl font-bold mb-2">
+									TL;DR
+								</h2>
+								<ul className="list-disc pl-6 space-y-2">
+									{/* ...You can map through a list of summary points here... */}
+									<li className="">
+										Your summary point 1...
+									</li>
+									{/* ... */}
+								</ul>
+								<div className="my-6">
+									<img
+										src={
+											'https://raw.githubusercontent.com/OrdinalsAcademy/ordinals-academy/main/web/public/professor_franken.jpg'
+										}
+										alt=""
+										className="w-full object-cover rounded-lg shadow-sm"
+									/>
+								</div>
+								<h1 className="text-3xl font-bold mb-4">
+									{postData?.title}
+								</h1>
+								<div
+									className="prose prose-sm prose-blue max-w-none dark:text-customWhite dark-mode-content"
+									dangerouslySetInnerHTML={{
+										__html: body ?? '',
+									}}
+								></div>
+								{/* ...You can continue with the rest of your article structure... */}
+							</div>
+						</article>
 					</div>
-				</article>
+					<div className="top-10 p-5 sticky self-start">
+						<div className="space-y-5 ">
+							<div>share posts</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>topic navigation</div>
+							<div>related articles</div>
+							<div>cta newsletter</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</>
 	);
