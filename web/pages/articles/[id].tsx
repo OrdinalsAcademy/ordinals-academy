@@ -71,6 +71,35 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 					<div>
 						<article className="max-w-2xl mx-auto p-6 shadow-md">
 							<div className="space-y-4">
+								<div className="my-6">
+									<img
+										src={
+											'https://raw.githubusercontent.com/OrdinalsAcademy/ordinals-academy/main/web/public/professor_franken.jpg'
+										}
+										alt=""
+										className="w-full object-cover rounded-lg shadow-sm"
+									/>
+								</div>
+								<div className="text-sm text-gray-500 mb-4">
+									<a href="/" className="hover:underline">
+										Home
+									</a>{' '}
+									&gt;
+									<a
+										href="/articles"
+										className="hover:underline ml-2"
+									>
+										Articles
+									</a>{' '}
+									&gt;
+									<span className="ml-2">
+										{postData?.title}
+									</span>
+								</div>
+								<h1 className="text-3xl font-bold mb-4">
+									{postData?.title}
+								</h1>
+
 								<h2 className="text-xl font-bold mb-2">
 									TL;DR
 								</h2>
@@ -81,18 +110,6 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 									</li>
 									{/* ... */}
 								</ul>
-								<div className="my-6">
-									<img
-										src={
-											'https://raw.githubusercontent.com/OrdinalsAcademy/ordinals-academy/main/web/public/professor_franken.jpg'
-										}
-										alt=""
-										className="w-full object-cover rounded-lg shadow-sm"
-									/>
-								</div>
-								<h1 className="text-3xl font-bold mb-4">
-									{postData?.title}
-								</h1>
 								<div
 									className="prose prose-sm prose-blue max-w-none dark:text-customWhite dark-mode-content custom-h3-size"
 									dangerouslySetInnerHTML={{
