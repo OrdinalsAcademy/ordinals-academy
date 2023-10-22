@@ -41,9 +41,9 @@ html {
 } */
 
 .dot-bullet {
-	width: 6px;
-	height: 6px;
-	border: 2px solid;
+	width: 8px;
+	height: 8px;
+	border: 1px solid;
 	border-radius: 2px;
 	transform: rotate(45deg);
 }
@@ -53,6 +53,31 @@ html {
 }
 
 .is-current .indicator {
-	border: 2px solid rgb(247, 147, 26) !important;
+	border: 1px solid rgb(247, 147, 26) !important;
 	background-color: rgb(247, 147, 26) !important;
+}
+
+.tail-wrapper {
+	box-sizing: border-box;
+	margin: 0px 0px 8px;
+	min-width: 0px;
+	padding-bottom: 24px;
+}
+
+.tail-wrapper .item-tail {
+	position: absolute;
+	height: 102%;
+	left: 12px;
+	top: 19px;
+	box-sizing: content-box;
+}
+
+.tail-wrapper .item-tail::after {
+	width: 4px;
+	height: 100%;
+	background-color: rgb(71, 77, 87);
+	margin-left: 12px;
+	display: inline-block;
+	border-radius: 1px;
+	content: '';
 }

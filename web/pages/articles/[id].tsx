@@ -226,26 +226,36 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 								)}
 								currentClassName="is-current"
 							>
-								{postData?.h3Topics.map((header: any) => (
-									<div
-										key={header.id}
-										className="relative mb-2 pb-6"
-									>
-										<div className="flex items-center space-x-3">
-											<div className="w-7 h-7 flex items-center justify-center">
-												<div className="dot-bullet indicator border-customDark dark:border-customWhite"></div>
-											</div>
-											<div className="cursor-pointer overflow-hidden">
-												<a
-													href={`#${header.id}`}
-													className="font-bold hover:underline link"
-												>
-													{header.title}
-												</a>
+								{postData?.h3Topics.map(
+									(header: any, index: number) => (
+										<div
+											key={header.id}
+											className="relative mb-2 pb-6"
+										>
+											<div className="flex items-center space-x-3">
+												<div className="tail-wrapper">
+													{index !==
+														postData.h3Topics
+															.length -
+															1 && (
+														<div className="item-tail"></div>
+													)}
+												</div>
+												<div className="w-7 h-7 flex items-center justify-center">
+													<div className="dot-bullet indicator border-customDark dark:border-customWhite"></div>
+												</div>
+												<div className="cursor-pointer overflow-hidden">
+													<a
+														href={`#${header.id}`}
+														className="font-bold hover:underline link"
+													>
+														{header.title}
+													</a>
+												</div>
 											</div>
 										</div>
-									</div>
-								))}
+									)
+								)}
 							</Scrollspy>
 							{/* <div>related articles</div>
 							<div>cta newsletter</div> */}
