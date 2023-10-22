@@ -12,6 +12,10 @@ html {
 	color: var(--text-customWhite);
 }
 
+.custom-h3-size h3 {
+	font-size: 24px;
+}
+
 /* :root {
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;

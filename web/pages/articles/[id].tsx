@@ -93,7 +93,7 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 									{postData?.title}
 								</h1>
 								<div
-									className="prose prose-sm prose-blue max-w-none dark:text-customWhite dark-mode-content"
+									className="prose prose-sm prose-blue max-w-none dark:text-customWhite dark-mode-content custom-h3-size"
 									dangerouslySetInnerHTML={{
 										__html: body ?? '',
 									}}
@@ -105,31 +105,16 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 					<div className="top-10 p-5 sticky self-start">
 						<div className="space-y-5 ">
 							<div>share posts</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
-							<div>topic navigation</div>
+							{postData?.h3Topics.map((header: any) => (
+								<div key={header.id}>
+									<a
+										href={`#${header.id}`}
+										className="hover:underline"
+									>
+										{header.title}
+									</a>
+								</div>
+							))}
 							<div>related articles</div>
 							<div>cta newsletter</div>
 						</div>

@@ -17,6 +17,7 @@
 	"dependencies": {
 		"@tailwindcss/typography": "^0.5.10",
 		"autoprefixer": "^10.4.16",
+		"cheerio": "^1.0.0-rc.12",
 		"gray-matter": "^4.0.3",
 		"i18next": "23.4.6",
 		"next": "^13.5.6",
