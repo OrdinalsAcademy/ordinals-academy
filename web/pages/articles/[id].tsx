@@ -233,12 +233,12 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 									>
 										<div className="flex items-center space-x-3">
 											<div className="w-7 h-7 flex items-center justify-center">
-												<div className="dot-bullet indicator"></div>
+												<div className="dot-bullet indicator border-customDark dark:border-customWhite"></div>
 											</div>
 											<div className="cursor-pointer overflow-hidden">
 												<a
 													href={`#${header.id}`}
-													className="font-bold text-gray-300 hover:underline link"
+													className="font-bold hover:underline link"
 												>
 													{header.title}
 												</a>

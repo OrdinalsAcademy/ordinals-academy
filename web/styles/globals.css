@@ -43,7 +43,7 @@ html {
 .dot-bullet {
 	width: 6px;
 	height: 6px;
-	border: 2px solid rgb(234, 236, 239);
+	border: 2px solid;
 	border-radius: 2px;
 	transform: rotate(45deg);
 }
@@ -53,6 +53,6 @@ html {
 }
 
 .is-current .indicator {
-	border: 2px solid rgb(247, 147, 26);
-	background-color: rgb(247, 147, 26);
+	border: 2px solid rgb(247, 147, 26) !important;
+	background-color: rgb(247, 147, 26) !important;
 }
