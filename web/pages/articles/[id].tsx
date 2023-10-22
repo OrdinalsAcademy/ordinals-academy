@@ -93,7 +93,7 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 					}
 				/>
 			</Head>
-			<div className="flex items-center justify-center md:p-20 pt-0 pb-0 bg-customWhite text-customDark dark:bg-customDark dark:text-customWhite">
+			<div className="flex items-center justify-center md:p-20 md:pt-0 pb-0 bg-customWhite text-customDark dark:bg-customDark dark:text-customWhite">
 				<div className="flex flex-col md:flex-row">
 					<div>
 						<article className="max-w-2xl mx-auto p-6 shadow-md">
