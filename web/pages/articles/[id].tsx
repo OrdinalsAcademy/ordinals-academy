@@ -2,6 +2,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { getPostsByLocale } from '../../utils/posts';
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
+import Scrollspy from 'react-scrollspy';
 
 export async function getStaticPaths({ locales }: any) {
 	const paths = locales.flatMap((locale: any) => {
@@ -104,19 +105,36 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 					</div>
 					<div className="top-10 p-5 sticky self-start">
 						<div className="space-y-5 ">
-							<div>share posts</div>
-							{postData?.h3Topics.map((header: any) => (
-								<div key={header.id}>
-									<a
-										href={`#${header.id}`}
-										className="hover:underline"
+							{/* <div>share posts</div> */}
+							<Scrollspy
+								items={postData?.h3Topics.map(
+									(header: any) => header.id
+								)}
+								currentClassName="is-current"
+							>
+								{postData?.h3Topics.map((header: any) => (
+									<div
+										key={header.id}
+										className="relative mb-2 pb-6"
 									>
-										{header.title}
-									</a>
-								</div>
-							))}
-							<div>related articles</div>
-							<div>cta newsletter</div>
+										<div className="flex items-center space-x-3">
+											<div className="w-7 h-7 flex items-center justify-center">
+												<div className="dot-bullet indicator"></div>
+											</div>
+											<div className="cursor-pointer overflow-hidden">
+												<a
+													href={`#${header.id}`}
+													className="font-bold text-gray-300 hover:underline link"
+												>
+													{header.title}
+												</a>
+											</div>
+										</div>
+									</div>
+								))}
+							</Scrollspy>
+							{/* <div>related articles</div>
+							<div>cta newsletter</div> */}
 						</div>
 					</div>
 				</div>
