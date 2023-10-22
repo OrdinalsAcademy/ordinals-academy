@@ -4,6 +4,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import slug from 'remark-slug';
 
 const postsDirectory = path.join(process.cwd(), 'content');
 
@@ -24,9 +25,12 @@ export function getPostsByLocale(locale: string) {
 		);
 		const matterResult = matter(fileContents);
 		const processedContent = remark()
+			.use(slug as any)
 			.use(html)
 			.processSync(matterResult.content);
-		const contentHtml = processedContent.toString();
+		const contentHtml = processedContent
+			.toString()
+			.replace(/user-content-/g, '');
 
 		return {
 			id,
