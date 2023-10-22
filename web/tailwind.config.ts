@@ -16,6 +16,8 @@ const config: Config = {
 				customLightGray: 'rgb(236, 239, 240)',
 				customDarker: 'rgb(11, 14, 17)',
 				customBitcoin: 'rgb(247, 147, 26)',
+				customIcons: 'rgb(146, 154, 165)',
+				customTwitter: 'rgb(29, 161, 242)',
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

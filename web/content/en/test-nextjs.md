@@ -5,8 +5,6 @@ date: '2023-10-21'
 author: 'John Doe'
 ---
 
-Next.js has rapidly become one of the top frameworks for React. Its ease of setup, built-in features like API routes, and support for server-side rendering make it an appealing choice for developers.
-
 ### Setting Up
 
 To set up a Next.js project with TypeScript:
