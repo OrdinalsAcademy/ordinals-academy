@@ -39,15 +39,6 @@ export async function getStaticProps({ params, locale }: any) {
 
 const BASE_URL = 'https://ordinalsacademy.org';
 
-const IconBack = () => <span>🔙</span>; // Placeholder icon, replace with your actual icon
-const IconYoutube = () => <span>🎥</span>;
-const IconLinkedin = () => <span>🔗</span>;
-const IconTwitter = () => <span>🐦</span>;
-const IconGithub = () => <span>👾</span>;
-
-const getAssetURL = (id: any) => `https://yourcdn.com/assets/${id}`; // Adjust to your actual asset URL structure
-const formatRelativeTime = (date: any) => date.toLocaleDateString(); // Simple date format, replace with a more advanced formatter if needed
-
 function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 	const body = postData?.contentHtml;
 
