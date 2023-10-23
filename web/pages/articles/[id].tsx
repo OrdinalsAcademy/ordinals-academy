@@ -1,5 +1,5 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { getPostsByLocale } from '../../utils/posts';
+import { getPostsByLocale } from '@/utils/posts';
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 import Scrollspy from 'react-scrollspy';
@@ -89,7 +89,7 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 				<div className="flex flex-col md:flex-row">
 					<div>
 						<article className="max-w-2xl mx-auto p-6 shadow-md">
-							<div className="space-y-4">
+							<div>
 								{/* Post Image */}
 								<div className="my-6">
 									<img
@@ -101,7 +101,7 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 									/>
 								</div>
 								{/* Breadcrumbs */}
-								<div className="text-sm text-gray-400 mb-4">
+								<div className="text-sm text-gray-400 mb-6">
 									<a href="/" className="hover:underline">
 										Home
 									</a>{' '}
@@ -118,11 +118,11 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 									</span>
 								</div>
 								{/* Post Title */}
-								<h1 className="text-3xl font-bold mb-4">
+								<h1 className="text-4xl font-bold mb-4">
 									{postData?.title}
 								</h1>
 								{/* difficulty, published date, updated date, read time */}
-								<div className="flex flex-row items-center space-x-4 text-sm text-gray-400">
+								<div className="flex flex-row items-center space-x-4 text-sm text-gray-400 mb-10">
 									{postData?.difficulty && (
 										<div className="items-center rounded-lg inline-flex justify-center px-2 text-customGray dark:text-white bg-green-400 bg-opacity-30 h-8">
 											<div className="bg-[rgb(2,192,118)] rounded-full mr-2 h-2 w-2" />
@@ -139,7 +139,7 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 									)}
 									{postData?.dateUpdated && (
 										<div>
-											Published{' '}
+											Updated{' '}
 											{formatDate(postData?.dateUpdated)}
 										</div>
 									)}
@@ -165,19 +165,23 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 									)}
 								</div>
 								{/* Post TL;DR */}
-								<h2 className="text-xl font-bold mb-2">
-									TL;DR
-								</h2>
-								<ul className="list-disc pl-6 space-y-2">
-									{/* ...You can map through a list of summary points here... */}
-									<li className="">
-										Your summary point 1...
-									</li>
-									{/* ... */}
-								</ul>
+								<div className="mb-10">
+									<h2 className="text-xl font-bold mb-4">
+										TL;DR
+									</h2>
+									<ul className="list-disc pl-8 space-y-2 text-gray-400 text-lg">
+										{postData?.tldr?.map(
+											(point: any, index: any) => (
+												<li key={index} className="">
+													{point}
+												</li>
+											)
+										)}
+									</ul>
+								</div>
 								{/* Post content */}
 								<div
-									className="prose prose-sm prose-blue max-w-none dark:text-customWhite dark-mode-content custom-h3-size"
+									className="prose prose-sm prose-blue max-w-none dark:text-customWhite dark-mode-content text-lg custom-h3-size custom-img-height"
 									dangerouslySetInnerHTML={{
 										__html: body ?? '',
 									}}

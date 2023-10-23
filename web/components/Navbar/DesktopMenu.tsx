@@ -4,7 +4,7 @@ import ThemeSwitcher from '../ThemeSwitcher';
 
 const navItems = [
 	{ name: 'Glossary', href: '/glossary' },
-	// { name: 'Articles', href: '/articles' },
+	{ name: 'Articles', href: '/articles' },
 	// { name: 'Courses', href: '/courses' },
 ];
 

@@ -40,6 +40,7 @@ export function getPostsByLocale(locale: string) {
 				id: $(elem).attr('id') || '',
 			});
 		});
+		console.log(contentHtml);
 
 		return {
 			id,
@@ -51,6 +52,7 @@ export function getPostsByLocale(locale: string) {
 				readTimeInMin: string;
 				difficulty: string;
 				title: string;
+				tldr: any;
 				description: string;
 			}),
 		};

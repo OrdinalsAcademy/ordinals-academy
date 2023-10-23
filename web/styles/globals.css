@@ -16,6 +16,10 @@ html {
 	font-size: 24px;
 }
 
+.custom-img-height img {
+	max-height: 400px;
+}
+
 /* :root {
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;

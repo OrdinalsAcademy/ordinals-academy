@@ -1,5 +1,5 @@
 ---
-title: 'Exploring Next.js with TypeScript'
+title: 'Exploring Next.js with TypeScript longer title bla bla bla Exploring Next.js with TypeScript longer title bla bla bla'
 description: 'A comprehensive introduction to building apps with Next.js and TypeScript.'
 datePublished: '2023-10-21'
 dateUpdated: '2023-10-23'
