@@ -12,7 +12,7 @@ interface ArticlesGridProps {
 
 const ArticlesDisplay: React.FC<ArticlesGridProps> = ({ articles }: any) => {
 	return (
-		<div className="mb-12 grid grid-cols-3 gap-4 items-stretch">
+		<div className="mb-12 grid grid-cols-1 p-4 md:p-0 md:grid-cols-3 gap-4 items-stretch">
 			{articles.map((article: any) => (
 				<Link key={article.id} href={`/articles/${article.id}`}>
 					<div className="relative transition-shadow duration-250 ease-in block rounded-2xl shadow-sm shadow-lg flex flex-col h-full bg-white dark:bg-customGray">
