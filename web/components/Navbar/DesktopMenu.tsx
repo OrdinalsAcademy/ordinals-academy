@@ -3,6 +3,7 @@ import LanguageSwitcher from '../LanguageSwitcher';
 import ThemeSwitcher from '../ThemeSwitcher';
 
 const navItems = [
+	{ name: 'Home', href: '/' },
 	{ name: 'Glossary', href: '/glossary' },
 	{ name: 'Articles', href: '/articles' },
 	// { name: 'Courses', href: '/courses' },

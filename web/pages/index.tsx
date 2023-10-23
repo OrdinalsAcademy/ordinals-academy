@@ -2,9 +2,12 @@ import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Hero from '@/components/Hero';
+import { getPostsByLocale } from '@/utils/posts';
+import ArticlesDisplay from '@/components/ArticlesDisplay';
 
 type Props = {
 	// Add custom props here
+	articles: any;
 };
 
 const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
@@ -18,16 +21,31 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 				</div>
 				{/* <Header heading={t('h1')} title={t('title')} /> */}
 				<Hero />
+				<div className="w-full max-w-7xl mt-20">
+					<div className="items-start flex justify-between">
+						<h1 className="text-xl mb-6">Latest Releases</h1>
+					</div>
+					<div className="p-6 max-w-7xl">
+						<ArticlesDisplay articles={_props.articles} />
+					</div>
+				</div>
 			</main>
 		</>
 	);
 };
 
-// or getServerSideProps: GetServerSideProps<Props> = async ({ locale })
-export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
-	props: {
-		...(await serverSideTranslations(locale ?? 'en', ['common', 'footer'])),
-	},
-});
+export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => {
+	const allPostsData = getPostsByLocale(locale || 'en');
+
+	return {
+		props: {
+			articles: allPostsData,
+			...(await serverSideTranslations(locale || 'en', [
+				'common',
+				'footer',
+			])),
+		},
+	};
+};
 
 export default Homepage;
