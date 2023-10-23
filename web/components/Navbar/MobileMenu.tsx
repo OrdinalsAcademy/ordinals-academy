@@ -22,8 +22,17 @@ export default function MobileMenu() {
 
 	return (
 		<>
+			<Link href="/">
+				<span className="cursor-pointer flex items-center justify-start font-display text-2xl">
+					<div className="flex items-center justify-start flex-shrink-0 text-white mr-6">
+						<span className="rounded-full p-1.5 px-5 text-xl tracking-tight font-Mitr text-customGray dark:text-white hover:text-customBitcoin dark:hover:text-customBitcoin">
+							Ordinals Academy
+						</span>
+					</div>
+				</span>
+			</Link>
 			<div className="flex lg:hidden justify-end w-full text-customDark dark:text-white">
-				<div className="flex mr-6">
+				<div className="flex mr-10">
 					<LanguageSwitcher />
 				</div>
 				<button

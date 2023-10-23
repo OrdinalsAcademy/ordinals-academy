@@ -7,7 +7,7 @@ export default function NavBar() {
 			<div
 				className={`top-0 w-full flex justify-center z-30 bg-customWhite dark:bg-customDark`}
 			>
-				<div className="mx-5 flex h-16 items-center justify-between w-full">
+				<div className="flex h-16 items-center w-full">
 					<MobileMenu />
 					<DesktopMenu />
 				</div>
