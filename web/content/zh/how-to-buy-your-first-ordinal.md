@@ -1,49 +1,58 @@
 ---
-title: '如何购买您的第一个序数标记！'
-description: '逐步指导您购买第一个序数标记。从理解序数标记理论到使用Xverse和Magic Eden等市场成功购买题记。深入探讨比特币上的数字所有权的未来。'
+title: '如何购买您的第一个Ordinal！'
+description: '逐步指导您购买第一个Ordinal。从理解Ordinal Theory到使用Xverse和像Magic Eden这样的市场成功购买题记，探索比特币NFTs的世界。深入比特币的数字所有权的未来。'
 datePublished: '2023-10-23'
 readTimeInMin: '3'
 difficulty: '初级'
 author: 'Franken'
 tldr:
-- '序数标记是聪（比特币的最小单位），并且数据附加到这些序数标记上，从而创建“比特币上的NFT”。'
-- '多个钱包和市场现在支持安全存储和销售序数标记。'
-- "如果您熟悉ETH NFT，使用Xverse或Leather钱包与Magic Eden和Gamma等市场的购买过程类似。"
-如果您刚刚接触序数标记的世界，一些初始术语可能会略显混淆，可能会 detract from the simplicity of purchasing within the current infrastructure. 本文中，我们将介绍序数标记的基础知识，并指导您如何开始购买第一个题记（比特币上的NFT）。
+    - 'Ordinals是satoshis（比特币的最小单位）并且数据附加到这些ordinals上，创建“比特币上的NFT”。'
+    - '现在有多个钱包和市场支持Ordinals的安全存储和销售。'
+    - '如果您熟悉ETH NFTs，使用Xverse或Leather钱包以及像Magic Eden和Gamma这样的市场的购买过程是相似的。'
 ---
 
-序数标记的基础
-构成序数标记协议的系统由两个主要部分组成：序数标记理论，单个 Satoshis（比特币的 0.00000001）的编号，以及题记，将数据附加到这些序数标记的过程。 序数标记协议到比特币网络只是比特币从一个钱包发送到另一个钱包作为典型的交易，只有通过使用收集、解析和存储来自交易的信息的索引器，我们才能确定哪个 jpg 属于哪个聪。
+如果您刚接触 Ordinals 的世界，最初的术语可能会稍微令人困惑，可能会 detract 简单的购买过程。在这篇文章中，我们将介绍 ordinals 的基础知识，并指导您如何开始购买您的第一个 Inscription（比特币上的 NFT）。
 
-钱包和市场
-随着钱包和索引器的进步，我们现在可以使用被认为是'了解序数标记的'的钱包如 Xverse 和 Leather 舒适地存储和购买序数标记。 在这两种情况下，这些钱包将序数标记与您的“消费”比特币分开存储，最大限度地减少了意外发送序数标记的风险。 连接钱包到市场时，它将扫描该地址并确定您拥有哪些资产。
+### Ordinals 的基础知识
 
-如何购买您的第一个序数标记？
+组成 Ordinals 协议的系统主要由两部分组成：**Ordinal Theory**，编号单个的 Satoshis（比特币的 0.00000001），和**Inscriptions**，将数据附加到这些 Ordinals 的过程。Ordinals 协议到比特币网络就是比特币从一个钱包发送到另一个钱包作为典型的交易，只是通过使用收集、解析和存储交易信息的索引器，我们可以确定哪个 jpg 属于哪个 satoshi。
 
-1. 下载您的钱包
-   https://www.xverse.app/
+### 钱包和市场
 
-在这个示例中，我们将使用 Xverse 钱包来购买和存储我们的序数标记。 始终确认您正在从官方 Xverse 网站下载。 Xverse 与 Chrome 兼容，并且还提供移动版本。
+随着钱包和索引器的进步，我们现在可以使用被视为'Ordinal Aware'的钱包如 Xverse 和 Leather 轻松地存储和购买 ordinals。在这两种情况下，这些钱包将 Ordinal 与您的'spending'比特币分开存储，最大限度地减少了不小心发送 ordinal 的风险。当将您的钱包连接到一个市场时，它会扫描该地址并确定您拥有哪些资产。
 
-2. 为您的钱包提供资金
-   您的 Xverse 钱包将有三个不同的接收地址。 为了为您的钱包提供资金，始终将 BTC 发送到您的'比特币'地址。 当购买题记时，‘序数标记’地址将是发送序数标记的地方。
+### 如何购买您的第一个 Ordinal？
 
-3. 连接到市场
-   https://magiceden.io/ordinals/
+### 1. **下载您的钱包**
 
-在此示例中，我们将使用 Magic Eden 完成购买过程。 在右上角选择'Connect Wallet.' 如果这是您第一次连接，您将被提示签名并准备好您的钱包。 始终确保您正在连接到官方网站。
+[https://www.xverse.app/](https://www.xverse.app/)
 
-4. 进行购买
-   找到您喜欢的序数标记后，选择'Buy Now.' 此时，您的 Xverse 钱包将弹出并提示您确认交易。 始终仔细检查正在传输和接收的项目。 选择‘Buy Now’并且交易正在进行中，其他人就不能购买该物品。
+在这个例子中，我们将使用 Xverse 钱包来购买和存储我们的 ordinal。始终确认您正在从官方 Xverse 网站下载。Xverse 与 Chrome 兼容，还提供移动版本。
 
-5. 确认交易已完成
-   交易（包括转账和购买）通常需要大约 10 分钟才能在比特币上完成。 但是，这个持续时间并不总是一致的，可能会有很大的变化。
+![xverse](/images/how-to-buy-your-first-ordinal/image1.png)
 
-您可以在 mempool.space 上跟踪您的交易进度。
+### 2. **为您的钱包充值**
 
-箭头指示您的交易在'队列'中的位置。 一旦批准，红色的‘Unconfirmed’将变成绿色的‘Confirmed.’
+您的 Xverse 钱包将有三个不同的接收地址。为了为您的钱包提供资金，请始终将 BTC 发送到您的'Bitcoin'地址。购买您的题记时，'Ordinals'地址将是发送 ordinal 的地方。
 
-6. 查看您的序数标记
-   您有多种方法可以查看您最近购买的序数标记。 第一种方法是使用 Xverse 钱包的第二个标签。 第二种是通过连接的市场； 对于 Magic Eden，选择右上角的地址，然后选择'My Items.' 最后，您可以使用像**ord.io**这样的网站，并粘贴您的地址以查看您持有的物品。
+![Screenshot 2023-10-23 130940.png](/images/how-to-buy-your-first-ordinal/image2.png)
 
-感谢您的阅读，我们希望这使您的购买体验变得不那么令人生畏。
+### 3. **连接到一个市场**
+
+[https://magiceden.io/ordinals/](https://magiceden.io/ordinals/)
+
+在这个例子中，我们将使用 Magic Eden 来完成购买过程。在右上角，选择'Connect Wallet.'。如果这是您第一次连接，您将被提示签名并准备您的钱包。始终确保您正在连接到官方网站。
+
+![Untitled](/images/how-to-buy-your-first-ordinal/image3.png)
+
+### 4. **进行购买**
+
+一旦您找到喜欢的 Ordinal，选择'Buy Now.'。此时您的 Xverse 钱包将弹出并提示您确认交易。始终仔细检查正在传输和接收的项目。一旦您选择'Buy Now'并且交易是待定的，其他人就不能购买该项目。
+
+![Untitled](/images/how-to-buy-your-first-ordinal/image4.png)
+
+![Untitled](/images/how-to-buy-your-first-ordinal/image5.png)
+
+### 5. **确认交易已完成**
+
+交易，包括转账和购买，通常需要大约 10 分钟才能在比特币上完成。但是，这个时间并不总是一致的，并且可能会有
