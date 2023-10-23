@@ -1,7 +1,10 @@
 ---
 title: 'Exploring Next.js with TypeScript'
 description: 'A comprehensive introduction to building apps with Next.js and TypeScript.'
-date: '2023-10-21'
+datePublished: '2023-10-21'
+dateUpdated: '2023-10-23'
+readTimeInMin: '3'
+difficulty: 'Beginner'
 author: 'John Doe'
 ---
 

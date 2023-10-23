@@ -46,7 +46,10 @@ export function getPostsByLocale(locale: string) {
 			contentHtml,
 			h3Topics,
 			...(matterResult.data as {
-				date: string;
+				datePublished: string;
+				dateUpdated: string;
+				readTimeInMin: string;
+				difficulty: string;
 				title: string;
 				description: string;
 			}),
