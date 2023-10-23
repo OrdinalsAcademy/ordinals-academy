@@ -11,15 +11,15 @@ const Banner: React.FC<BannerProps> = ({ text }: BannerProps) => {
 		<div className="flex flex-col mb-10">
 			<div className="rounded-xl dark:bg-customGray grid grid-cols-1 md:grid-cols-2 pt-4 pb-10 md:p-0">
 				<div className="p-6 md:p-10 md:pr-0">
-					<div className="font-bold text-3xl md:text-5xl mb-4">
+					<div className="font-bold text-3xl md:text-4xl mb-4">
 						No idea where to start?
 					</div>
-					<div className="text-lg md:text-2xl mb-10">
+					<div className="text-lg md:text-xl mb-10">
 						Do not worry. Our glossary is a great place to get you
 						up to speed.
 					</div>
 					<a href="/glossary">
-						<button className="items-center border border-transparent rounded inline-flex font-semibold justify-center whitespace-nowrap focus:outline-none text-base h-12 leading-6 px-10 bg-customBitcoin text-white dark:bg-customBitcoin dark:text-white">
+						<button className="items-center border border-transparent rounded inline-flex font-semibold justify-center whitespace-nowrap focus:outline-none text-base h-12 leading-6 px-8 bg-customBitcoin text-white dark:bg-customBitcoin dark:text-white">
 							{text}
 						</button>
 					</a>

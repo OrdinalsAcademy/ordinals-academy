@@ -22,34 +22,36 @@ export default function MobileMenu() {
 
 	return (
 		<>
-			<Link href="/">
-				<span className="cursor-pointer flex items-center justify-start font-display text-2xl">
-					<div className="flex items-center justify-start flex-shrink-0 text-white mr-6">
-						<span className="rounded-full p-1.5 px-5 text-xl tracking-tight font-Mitr text-customGray dark:text-white hover:text-customBitcoin dark:hover:text-customBitcoin">
-							Ordinals Academy
-						</span>
+			<div className="flex justify-between lg:hidden w-full text-customDark dark:text-white">
+				<Link className="flex" href="/">
+					<span className="cursor-pointer flex items-center font-display text-2xl">
+						<div className="flex items-center flex-shrink-0 text-white mr-6">
+							<span className="rounded-full p-1.5 px-5 text-xl tracking-tight font-Mitr text-customGray dark:text-white hover:text-customBitcoin dark:hover:text-customBitcoin">
+								Ordinals Academy
+							</span>
+						</div>
+					</span>
+				</Link>
+				<div className="flex items-end">
+					<div className="flex mr-10 ">
+						<LanguageSwitcher />
 					</div>
-				</span>
-			</Link>
-			<div className="flex lg:hidden justify-end w-full text-customDark dark:text-white">
-				<div className="flex mr-10">
-					<LanguageSwitcher />
+					<button
+						onClick={() => setIsOpen(!isOpen)}
+						className="absolute top-5 right-5"
+					>
+						{!isOpen && (
+							<svg
+								className="menuIcon h-6 w-6"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="currentColor"
+							>
+								<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v15z" />
+							</svg>
+						)}
+					</button>
 				</div>
-				<button
-					onClick={() => setIsOpen(!isOpen)}
-					className="absolute top-5 right-5"
-				>
-					{!isOpen && (
-						<svg
-							className="menuIcon h-6 w-6"
-							viewBox="0 0 20 20"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="currentColor"
-						>
-							<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v15z" />
-						</svg>
-					)}
-				</button>
 			</div>
 			<div
 				className={`lg:hidden ${

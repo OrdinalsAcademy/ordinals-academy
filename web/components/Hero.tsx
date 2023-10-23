@@ -20,7 +20,7 @@ export default function Hero() {
 				</h1>
 				<p className="mb-8 md:mr-10">{t('description')}</p>
 				<a href="/glossary">
-					<button className="items-center border border-transparent rounded inline-flex font-semibold justify-center whitespace-nowrap focus:outline-none text-base h-12 leading-6 px-4 bg-customBitcoin text-white dark:bg-customWhite dark:text-customDark">
+					<button className="items-center border border-transparent rounded inline-flex font-semibold justify-center whitespace-nowrap focus:outline-none text-base h-12 leading-6 px-6 bg-customBitcoin text-white dark:bg-customWhite dark:text-customDark">
 						{t('startButton')}
 					</button>
 				</a>
