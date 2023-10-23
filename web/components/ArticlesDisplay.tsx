@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { formatDate } from 'utils/date';
 
 function truncateText(str: any, maxLength: any) {
-	if (str.length <= maxLength) return str;
-	return `${str.substring(0, maxLength - 3)}...`;
+	if (str?.length <= maxLength) return str;
+	return `${str?.substring(0, maxLength - 3)}...`;
 }
 
 interface ArticlesGridProps {

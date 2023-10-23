@@ -4,6 +4,9 @@ import { useTranslation } from 'next-i18next';
 import Hero from '@/components/Hero';
 import { getPostsByLocale } from '@/utils/posts';
 import ArticlesDisplay from '@/components/ArticlesDisplay';
+import FrankenImage from 'public/franken_pfp.jpeg';
+import Image from 'next/image';
+import Banner from '@/components/Banner';
 
 type Props = {
 	// Add custom props here
@@ -22,14 +25,13 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 				{/* <Header heading={t('h1')} title={t('title')} /> */}
 				<Hero />
 				<div className="w-full max-w-6xl mt-20">
-					<div className="items-start flex justify-between">
+					<Banner text={t('startButton')} />
+					<div className="items-start flex justify-between mb-2">
 						<h1 className="text-xl mb-6 text-customLightGray">
 							Latest Releases
 						</h1>
 					</div>
-					<div className="mt-2">
-						<ArticlesDisplay articles={_props.articles} />
-					</div>
+					<ArticlesDisplay articles={_props.articles} />
 				</div>
 			</main>
 		</>
