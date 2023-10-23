@@ -7,22 +7,25 @@ export default function Hero() {
 	const videoLength = 27;
 
 	return (
-		<div className="grid grid-cols-1 items-center md:grid-cols-2">
-			<div className="pl-6 m-5 md:ml-[200px] md:pl-24 text-customGray dark:text-customWhite">
+		<div className="grid grid-cols-1 items-center md:grid-cols-2 w-full">
+			<div
+				className="ml-auto pt-12 pb-12 pr-8 px-4 pl-6 m-5 md:pl-24 text-customGray dark:text-customWhite"
+				style={{ maxWidth: '650px' }}
+			>
 				<div className="uppercase font-bold mb-2">
 					{t('subheading')}
 				</div>
-				<h1 className="text-4xl md:text-6xl font-bold mb-5">
+				<h1 className="text-4xl md:text-6xl font-bold mb-6">
 					{t('h1')}
 				</h1>
-				<p className="text-lg mb-8 md:mr-10">{t('description')}</p>
+				<p className="mb-8 md:mr-10">{t('description')}</p>
 				<a href="/glossary">
 					<button className="items-center border border-transparent rounded inline-flex font-semibold justify-center whitespace-nowrap focus:outline-none text-base h-12 leading-6 px-4 bg-customBitcoin text-white dark:bg-customWhite dark:text-customDark">
 						{t('startButton')}
 					</button>
 				</a>
 			</div>
-			<div className="p-4 md:p-16 pl-10 bg-white dark:bg-customGray">
+			<div className="p-4 md:p-10 md:pt-16 bg-white dark:bg-customGray">
 				<div>
 					<div className="uppercase font-bold mb-2">
 						{t('featured')}

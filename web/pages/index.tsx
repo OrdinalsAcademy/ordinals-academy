@@ -21,11 +21,13 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 				</div>
 				{/* <Header heading={t('h1')} title={t('title')} /> */}
 				<Hero />
-				<div className="w-full max-w-7xl mt-20">
+				<div className="w-full max-w-6xl mt-20">
 					<div className="items-start flex justify-between">
-						<h1 className="text-xl mb-6">Latest Releases</h1>
+						<h1 className="text-xl mb-6 text-customLightGray">
+							Latest Releases
+						</h1>
 					</div>
-					<div className="p-6 max-w-7xl">
+					<div className="mt-2">
 						<ArticlesDisplay articles={_props.articles} />
 					</div>
 				</div>
