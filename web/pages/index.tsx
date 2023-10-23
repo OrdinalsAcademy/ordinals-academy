@@ -27,7 +27,7 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 				<div className="w-full max-w-6xl mt-20">
 					<Banner text={t('startButton')} />
 					<div className="items-start flex justify-between mb-2">
-						<h1 className="text-xl mb-6 text-customLightGray">
+						<h1 className="text-xl mb-6 text-customLightGray w-full pl-6 md:p-0">
 							Latest Releases
 						</h1>
 					</div>

@@ -25,7 +25,7 @@ export default function Hero() {
 					</button>
 				</a>
 			</div>
-			<div className="p-4 md:p-10 md:pt-16 bg-white dark:bg-customGray">
+			<div className="p-6 md:p-10 md:pt-16 bg-white dark:bg-customGray">
 				<div>
 					<div className="uppercase font-bold mb-2">
 						{t('featured')}
