@@ -186,7 +186,48 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 										__html: body ?? '',
 									}}
 								></div>
-								{/* ...You can continue with the rest of your article structure... */}
+								{/* ...continue with the rest of your article structure... */}
+								<div>
+									<p className="mt-6 italic">
+										<strong>Disclaimer: </strong>
+										The information provided in this article
+										is for general informational purposes
+										only. While we strive to keep the
+										information up-to-date and accurate,
+										there may be some discrepancies, errors,
+										or omissions. Ordinals Academy makes no
+										representations or warranties of any
+										kind, express or implied, about the
+										completeness, accuracy, reliability,
+										suitability, or availability of the
+										information contained in this article
+										for any purpose. Any reliance you place
+										on such information is therefore
+										strictly at your own risk. In no event
+										will Ordinals Academy be liable for any
+										loss or damage including, without
+										limitation, indirect or consequential
+										loss or damage, or any loss or damage
+										whatsoever arising from the use or
+										reliance on information provided in this
+										article. This article may contain links
+										to external websites that are not
+										provided or maintained by or in any way
+										affiliated with Ordinals Academy. Please
+										note that Ordinals Academy does not
+										guarantee the accuracy, relevance,
+										timeliness, or completeness of any
+										information on these external websites.
+										We encourage readers to always consult
+										with appropriate professionals or
+										experts before making any decisions
+										based on the content of this article.
+										The views and opinions expressed in this
+										article are those of the authors and do
+										not necessarily reflect the official
+										policy or position of Ordinals Academy.
+									</p>
+								</div>
 							</div>
 						</article>
 					</div>
