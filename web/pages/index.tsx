@@ -34,9 +34,6 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 						</h1>
 					</div>
 					<ArticlesDisplay articles={_props.articles} />
-					<div className="custom-iframe">
-						<CustomSubstackEmbed />
-					</div>
 				</div>
 				<SubstackCTA />
 			</main>
