@@ -7,6 +7,8 @@ import ArticlesDisplay from '@/components/ArticlesDisplay';
 import FrankenImage from 'public/franken_pfp.jpeg';
 import Image from 'next/image';
 import Banner from '@/components/Banner';
+import CustomSubstackEmbed from '@/components/CustomSubstackEmbed';
+import SubstackCTA from '@/components/SubstackCTA';
 
 type Props = {
 	// Add custom props here
@@ -32,7 +34,11 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 						</h1>
 					</div>
 					<ArticlesDisplay articles={_props.articles} />
+					<div className="custom-iframe">
+						<CustomSubstackEmbed />
+					</div>
 				</div>
+				<SubstackCTA />
 			</main>
 		</>
 	);

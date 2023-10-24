@@ -20,6 +20,10 @@ html {
 	max-height: 400px;
 }
 
+.custom-substack-widget button {
+	color: white !important;
+}
+
 /* :root {
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
