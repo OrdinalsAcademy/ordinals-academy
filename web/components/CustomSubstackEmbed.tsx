@@ -25,7 +25,7 @@ function CustomSubstackEmbed() {
 			{/* Load substack form */}
 			<Script id="rendered-component">
 				{`window.CustomSubstackWidget = {
-            substackUrl: "ordinalsglobal.substack.com",
+            substackUrl: "ordinalsacademy.substack.com",
             placeholder: "ordinals@gmail.com",
             buttonText: "Subscribe",
             theme: "custom",
