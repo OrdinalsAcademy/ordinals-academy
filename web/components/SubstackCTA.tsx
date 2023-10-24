@@ -12,12 +12,12 @@ const SubstackCTA: React.FC = () => {
 						<div className="font-bold text-3xl md:text-4xl mb-4">
 							Don't miss out.
 						</div>
-						<div className="text-lg md:text-xl mb-10">
+						<div className="text-lg md:text-xl md:mb-10">
 							Join the Ordinals community and sign up for our
 							weekly newsletter.
 						</div>
 					</div>
-					<div className="md:p-20 flex justify-center md:justify-start">
+					<div className="md:p-20 flex pl-6 md:justify-start">
 						<div>
 							<CustomSubstackEmbed />
 						</div>
