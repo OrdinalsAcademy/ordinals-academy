@@ -17,7 +17,7 @@ const SubstackCTA: React.FC = () => {
 							weekly newsletter.
 						</div>
 					</div>
-					<div className="md:p-10 md:pl-0 flex justify-center md:justify-end">
+					<div className="md:p-20 flex justify-center md:justify-start">
 						<div>
 							<CustomSubstackEmbed />
 						</div>
