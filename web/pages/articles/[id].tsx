@@ -68,9 +68,16 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 					content={postData?.description}
 				/>
 				<meta
+					name="og:image"
+					content={
+						'https://raw.githubusercontent.com/OrdinalsAcademy/ordinals-academy/main/web/public/professor_franken.jpg'
+					}
+				/>
+				<meta
 					property="og:url"
 					content={`${BASE_URL}/articles/${postData?.id}`}
 				/>
+				<meta property="og:robots" content="index, follow" />
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:site" content="@OrdinalsAcademy" />
 				<meta name="twitter:title" content={postData?.title} />
@@ -96,7 +103,7 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 										src={
 											'https://raw.githubusercontent.com/OrdinalsAcademy/ordinals-academy/main/web/public/professor_franken.jpg'
 										}
-										alt=""
+										alt={postData?.title}
 										className="w-full object-cover rounded-lg shadow-sm"
 									/>
 								</div>

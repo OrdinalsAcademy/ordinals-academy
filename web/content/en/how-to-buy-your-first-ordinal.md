@@ -25,7 +25,7 @@ With the advancement in wallets and indexers, we can now comfortably store and p
 
 ### 1. **Download Your Wallet**
 
-https://www.xverse.app/
+[Visit Xverse App](https://www.xverse.app/)
 
 In this example, we'll be using the Xverse wallet to purchase and store our ordinal. Always confirm that you are downloading from the official Xverse website. Xverse is compatible with Chrome and also offers a mobile version.
 
