@@ -51,6 +51,7 @@ export function getPostsByLocale(locale: string) {
 				dateUpdated: string;
 				readTimeInMin: string;
 				difficulty: string;
+				author: string;
 				title: string;
 				tldr: any;
 				description: string;
