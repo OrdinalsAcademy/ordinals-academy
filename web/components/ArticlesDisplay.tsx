@@ -22,7 +22,7 @@ const ArticlesDisplay: React.FC<ArticlesGridProps> = ({ articles }: any) => {
 									src={
 										'/images/how-to-buy-your-first-ordinal/image7.png'
 									}
-									alt="Descriptive alt text"
+									alt="placeholder image"
 									className="absolute top-0 left-0 w-full h-full object-cover"
 								/>
 							</div>
