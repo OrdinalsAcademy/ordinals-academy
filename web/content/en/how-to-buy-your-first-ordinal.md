@@ -73,8 +73,6 @@ You have several ways to view your recently purchased ordinals. The first method
 
 ![Untitled](/images/how-to-buy-your-first-ordinal/image8.png)
 
-<img src="/images/how-to-buy-your-first-ordinal/image8.png" alt="Description of Image" id="myImageID"  />
-
 ![Untitled](/images/how-to-buy-your-first-ordinal/image9.png)
 
 Thanks for reading, and we hope that this has made your purchasing experience a little less daunting.
