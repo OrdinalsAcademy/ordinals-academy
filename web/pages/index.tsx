@@ -9,6 +9,7 @@ import Image from 'next/image';
 import Banner from '@/components/Banner';
 import CustomSubstackEmbed from '@/components/CustomSubstackEmbed';
 import SubstackCTA from '@/components/SubstackCTA';
+import Head from 'next/head';
 
 type Props = {
 	// Add custom props here
@@ -20,13 +21,24 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 
 	return (
 		<>
+			<Head>
+				<title>
+					{'Learn All About Bitcoin Ordinals | Ordinals Academy'}
+				</title>
+				<meta
+					property="og:title"
+					content={
+						'Learn All About Bitcoin Ordinals | Ordinals Academy'
+					}
+				/>
+			</Head>
 			<main className="w-full flex min-h-screen flex-col items-center bg-customWhite dark:bg-customDark text-black dark:text-white">
 				<div className="flex w-full p-3 text-sm items-center justify-center font-semibold bg-customGray text-white dark:bg-customBitcoin">
 					{t('Free Bitcoin Ordinals Education')}
 				</div>
 				{/* <Header heading={t('h1')} title={t('title')} /> */}
 				<Hero />
-				<div className="w-full max-w-6xl mt-20">
+				<div className="w-full max-w-6xl mt-20 mb-10">
 					<Banner text={t('startButton')} />
 					<div className="items-start flex justify-between mb-2">
 						<h1 className="text-xl mb-6 text-customLightGray w-full pl-6 md:p-0">

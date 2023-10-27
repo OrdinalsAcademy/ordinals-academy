@@ -5,6 +5,7 @@ import FrankenImage from 'public/professor_franken.jpg';
 import { useTranslation } from 'next-i18next';
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import Head from 'next/head';
 
 type Props = {
 	// Add custom props here
@@ -277,61 +278,70 @@ export default function Glossary(
 	);
 
 	return (
-		<div className="min-h-screen flex flex-col pb-20 justify-center items-center bg-center bg-no-repeat bg-cover bg-customWhite text-black dark:bg-customDark dark:text-white">
-			<div className="py-20 px-6 md:px-20 w-full mx-auto bg-white dark:bg-customDarker items-center justify-center">
-				<div className="flex items-center grid grid-cols-1 md:grid-cols-2 gap-8 grid-rows-auto">
-					<div className="md:ml-20 px-6 md:px-20">
-						<h1 className="text-3xl md:text-4xl leading-18 mb-4 font-semibold">
-							{t('terminologyHeader.title')}
-						</h1>
-						<p className="text-xl font-normal leading-[1.45] text-base">
-							{t('terminologyHeader.description')}
-						</p>
-					</div>
-					<div className="relative overflow-hidden text-center max-w-[500px] rounded-lg mt-6 md:mt-0">
-						<Image
-							src={FrankenImage.src}
-							alt="Bitcoin Ordinals Terminology"
-							width={500}
-							height={500}
-						/>
+		<>
+			<Head>
+				<title>{'Glossary | Ordinals Academy'}</title>
+				<meta
+					property="og:title"
+					content={'Glossary | Ordinals Academy'}
+				/>
+			</Head>
+			<div className="min-h-screen flex flex-col pb-20 justify-center items-center bg-center bg-no-repeat bg-cover bg-customWhite text-black dark:bg-customDark dark:text-white">
+				<div className="py-20 px-6 md:px-20 w-full mx-auto bg-white dark:bg-customDarker items-center justify-center">
+					<div className="flex items-center grid grid-cols-1 md:grid-cols-2 gap-8 grid-rows-auto">
+						<div className="md:ml-20 px-6 md:px-20">
+							<h1 className="text-3xl md:text-4xl leading-18 mb-4 font-semibold">
+								{t('terminologyHeader.title')}
+							</h1>
+							<p className="text-xl font-normal leading-[1.45] text-base">
+								{t('terminologyHeader.description')}
+							</p>
+						</div>
+						<div className="relative overflow-hidden text-center max-w-[500px] rounded-lg mt-6 md:mt-0">
+							<Image
+								src={FrankenImage.src}
+								alt="Bitcoin Ordinals Terminology"
+								width={500}
+								height={500}
+							/>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div
-				ref={sentinelRef}
-				style={{ height: '40px', width: '100%' }}
-			></div>
-			<div
-				className={`p-4 mx-auto sticky top-0 z-9 w-full items-center justify-center flex transition-all ${
-					isAtTop ? 'bg-customGray text-white' : ''
-				}`}
-			>
-				<div className="max-w-[1136px] items-center grid grid-cols-1 grid-rows-auto">
-					<div className="flex flex-wrap gap-2">
-						{Object.keys(organizedData)
-							.sort()
-							.map((key) => (
-								<Link
-									href={`#${key}`}
-									key={key}
-									className="p-2 hover:font-bold rounded"
-								>
-									{key}
-								</Link>
-							))}
+				<div
+					ref={sentinelRef}
+					style={{ height: '40px', width: '100%' }}
+				></div>
+				<div
+					className={`p-4 mx-auto sticky top-0 z-9 w-full items-center justify-center flex transition-all ${
+						isAtTop ? 'bg-customGray text-white' : ''
+					}`}
+				>
+					<div className="max-w-[1136px] items-center grid grid-cols-1 grid-rows-auto">
+						<div className="flex flex-wrap gap-2">
+							{Object.keys(organizedData)
+								.sort()
+								.map((key) => (
+									<Link
+										href={`#${key}`}
+										key={key}
+										className="p-2 hover:font-bold rounded"
+									>
+										{key}
+									</Link>
+								))}
+						</div>
 					</div>
 				</div>
+				<div className="max-w-[1136px] pt-0 p-4">
+					{Object.keys(organizedData)
+						.sort()
+						.map((key, index) =>
+							renderCategory(key, organizedData[key], index)
+						)}
+				</div>
 			</div>
-			<div className="max-w-[1136px] pt-0 p-4">
-				{Object.keys(organizedData)
-					.sort()
-					.map((key, index) =>
-						renderCategory(key, organizedData[key], index)
-					)}
-			</div>
-		</div>
+		</>
 	);
 }
 
