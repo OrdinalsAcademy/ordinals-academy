@@ -47,14 +47,14 @@ export const Footer = () => {
 								Contribute
 							</a>
 						</li>
-						<li className="mb-2">
+						{/* <li className="mb-2">
 							<a
 								href="https://zealy.io/c/ordinalsacademy/questboard"
 								className="hover:underline"
 							>
 								Donate
 							</a>
-						</li>
+						</li> */}
 					</ul>
 				</div>
 
