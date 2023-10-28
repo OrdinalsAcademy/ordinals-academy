@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
-import x from '/public/images/x.png';
+import x from '/public/images/twitter.png';
 import zealy from '/public/images/zealy.ico';
 
 export const Footer = () => {
@@ -69,8 +69,8 @@ export const Footer = () => {
 							<Image
 								src={x.src}
 								alt="Twitter"
-								width={20}
-								height={20}
+								width={22}
+								height={22}
 							/>
 						</a>
 						<a
