@@ -8,14 +8,14 @@ export const Footer = () => {
 	const { t } = useTranslation('footer');
 
 	return (
-		<footer className="flex w-full text-white pt-12 pb-20 bg-customWhite dark:bg-customDark text-black dark:text-white">
+		<footer className="flex w-full bg-customWhite dark:bg-customDark text-black dark:text-white p-6 md:pt-12 pb-20">
 			<div className=" max-w-6xl container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 				<Link
 					href="/"
 					className="cursor-pointer flex font-display text-2xl"
 				>
 					<div className="flexflex-shrink-0 text-white">
-						<span className="rounded-full p-1.5 text-xl tracking-tight font-Mitr text-customGray dark:text-white hover:text-customBitcoin dark:hover:text-customBitcoin">
+						<span className="rounded-full text-xl tracking-tight font-Mitr text-customGray dark:text-white hover:text-customBitcoin dark:hover:text-customBitcoin">
 							Ordinals Academy
 						</span>
 					</div>

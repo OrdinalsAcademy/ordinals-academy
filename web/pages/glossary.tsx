@@ -289,7 +289,7 @@ export default function Glossary(
 			<div className="min-h-screen flex flex-col pb-20 justify-center items-center bg-center bg-no-repeat bg-cover bg-customWhite text-black dark:bg-customDark dark:text-white">
 				<div className="py-20 px-6 md:px-20 w-full mx-auto bg-white dark:bg-customDarker items-center justify-center">
 					<div className="flex items-center grid grid-cols-1 md:grid-cols-2 gap-8 grid-rows-auto">
-						<div className="md:ml-20 px-6 md:px-20">
+						<div className="md:ml-20 md:px-6 md:px-20">
 							<h1 className="text-3xl md:text-4xl leading-18 mb-4 font-semibold">
 								{t('terminologyHeader.title')}
 							</h1>

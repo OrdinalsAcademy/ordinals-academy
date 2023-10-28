@@ -9,7 +9,7 @@ interface BannerProps {
 const Banner: React.FC<BannerProps> = ({ text }: BannerProps) => {
 	return (
 		<div className="flex flex-col mb-10">
-			<div className="rounded-xl dark:bg-customGray grid grid-cols-1 md:grid-cols-2 pt-4 pb-10 md:p-0">
+			<div className="rounded-xl bg-white dark:bg-customGray grid grid-cols-1 md:grid-cols-2 pt-4 pb-10 md:p-0">
 				<div className="p-6 md:p-10 md:pr-0">
 					<div className="font-bold text-3xl md:text-4xl mb-4">
 						No idea where to start?

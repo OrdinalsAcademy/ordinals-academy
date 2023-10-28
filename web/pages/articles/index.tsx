@@ -17,7 +17,7 @@ export default function ArticlesOverview({ articles }: any) {
 			<div className="flex flex-col items-center pt-10 md:pt-20 pb-0  bg-customWhite text-black dark:bg-customDark dark:text-white">
 				<div className="w-full max-w-7xl mb-20">
 					<div className="items-start flex justify-between">
-						<h1 className="text-2xl font-bold mb-6">
+						<h1 className="text-2xl font-bold ml-6 md:ml-0 mb-6">
 							Articles ({articles.length})
 						</h1>
 					</div>
