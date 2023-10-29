@@ -1,12 +1,14 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'next-i18next';
 
 function CustomSubstackEmbed() {
+	const { t } = useTranslation('common');
 	useEffect(() => {
 		// Define the settings for the widget
 		window.CustomSubstackWidget = {
 			substackUrl: 'ordinalsacademy.substack.com',
 			placeholder: 'ordinals@gmail.com',
-			buttonText: 'Subscribe',
+			buttonText: t('Subscribe'),
 			theme: 'custom',
 			colors: {
 				primary: 'rgb(20, 21, 26)',

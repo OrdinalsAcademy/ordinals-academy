@@ -135,5 +135,18 @@
 	"utxo": {
 		"title": "Unspent Transaction Output (UTXO)",
 		"description": "Instead of account balances, Bitcoin uses UTXOs to track the location of coins on the network. To spend a UTXO, you must provide a signature to prove you own the private key corresponding to that address."
-	}
+	},
+	"No idea where to start?": "No idea where to start?",
+	"Do not worry. Our glossary is a great place to get you up to speed.": "Do not worry. Our glossary is a great place to get you up to speed.",
+	"Latest Releases": "Latest Releases",
+	"Don't miss out.": "Don't miss out.",
+	"Join the Ordinals community and sign up for our weekly newsletter.": "Join the Ordinals community and sign up for our weekly newsletter.",
+	"Subscribe": "Subscribe",
+	"Discover": "Discover",
+	"Articles": "Articles",
+	"Glossary": "Glossary",
+	"Community": "Community",
+	"Contribute": "Contribute",
+	"Socials": "Socials",
+	"Donate": "Donate"
 }

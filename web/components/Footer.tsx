@@ -5,7 +5,7 @@ import x from '/public/images/twitter.png';
 import zealy from '/public/images/zealy.ico';
 
 export const Footer = () => {
-	const { t } = useTranslation('footer');
+	const { t } = useTranslation('common');
 
 	return (
 		<footer className="flex w-full bg-customWhite dark:bg-customDark text-black dark:text-white p-6 md:pt-12 pb-20">
@@ -21,30 +21,30 @@ export const Footer = () => {
 					</div>
 				</Link>
 				<div>
-					<h3 className="font-bold mb-2">Discover</h3>
+					<h3 className="font-bold mb-2">{t('Discover')}</h3>
 					<ul>
 						<li className="mb-2">
 							<Link href="/articles" className="hover:underline">
-								Articles
+								{t('Articles')}
 							</Link>
 						</li>
 						<li className="mb-2">
 							<Link href="/glossary" className="hover:underline">
-								Glossary
+								{t('Glossary')}
 							</Link>
 						</li>
 					</ul>
 				</div>
 
 				<div>
-					<h3 className="font-bold mb-2">Community</h3>
+					<h3 className="font-bold mb-2">{t('Community')}</h3>
 					<ul>
 						<li className="mb-2">
 							<a
 								href="https://zealy.io/c/ordinalsacademy/questboard"
 								className="hover:underline"
 							>
-								Contribute
+								{t('Contribute')}
 							</a>
 						</li>
 						{/* <li className="mb-2">
@@ -52,14 +52,14 @@ export const Footer = () => {
 								href="https://zealy.io/c/ordinalsacademy/questboard"
 								className="hover:underline"
 							>
-								Donate
+								{t('Donate')}
 							</a>
 						</li> */}
 					</ul>
 				</div>
 
 				<div>
-					<h3 className="font-bold mb-3">Socials</h3>
+					<h3 className="font-bold mb-3">{t('Socials')}</h3>
 					<div className="flex space-x-4">
 						<a
 							href="https://twitter.com/OrdinalsAcademy"

@@ -39,10 +39,10 @@ const Homepage = (_props: InferGetStaticPropsType<typeof getStaticProps>) => {
 				{/* <Header heading={t('h1')} title={t('title')} /> */}
 				<Hero />
 				<div className="w-full max-w-6xl mt-20 mb-10">
-					<Banner startButton={t('startButton')} />
+					<Banner />
 					<div className="items-start flex justify-between mb-2">
 						<h1 className="text-xl mb-6 text-customLightGray w-full pl-6 md:p-0">
-							Latest Releases
+							{t('Latest Releases')}
 						</h1>
 					</div>
 					<ArticlesDisplay articles={_props.articles} />
