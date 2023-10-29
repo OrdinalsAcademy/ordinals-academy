@@ -3,10 +3,10 @@ import Image from 'next/image';
 import FrankenImage from 'public/franken_pfp.jpeg';
 
 interface BannerProps {
-	text: any;
+	startButton: any;
 }
 
-const Banner: React.FC<BannerProps> = ({ text }: BannerProps) => {
+const Banner: React.FC<BannerProps> = ({ startButton }: BannerProps) => {
 	return (
 		<div className="flex flex-col mb-10">
 			<div className="rounded-xl bg-white dark:bg-customGray grid grid-cols-1 md:grid-cols-2 pt-4 pb-10 md:p-0">
@@ -20,7 +20,7 @@ const Banner: React.FC<BannerProps> = ({ text }: BannerProps) => {
 					</div>
 					<a href="/glossary">
 						<button className="items-center border border-transparent rounded inline-flex font-semibold justify-center whitespace-nowrap focus:outline-none text-base h-12 leading-6 px-8 bg-customBitcoin text-white dark:bg-customBitcoin dark:text-white">
-							{text}
+							{startButton}
 						</button>
 					</a>
 				</div>
