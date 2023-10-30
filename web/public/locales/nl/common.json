@@ -135,5 +135,24 @@
 	"utxo": {
 		"title": "Niet-uitgegeven Transactie-uitvoer (UTXO)",
 		"description": "In plaats van rekeningsaldi gebruikt Bitcoin UTXO's om de locatie van munten op het netwerk bij te houden. Om een UTXO uit te geven, moet u een handtekening leveren om te bewijzen dat u de privésleutel bezit die overeenkomt met dat adres."
-	}
+	},
+	"No idea where to start?": "Geen idee waar te beginnen?",
+	"Do not worry. Our glossary is a great place to get you up to speed.": "Maak je geen zorgen. Ons woordenboek is een geweldige plek om je snel op de hoogte te brengen.",
+	"Latest Releases": "Laatste Uitgaven",
+	"Don't miss out.": "Mis het niet.",
+	"Join the Ordinals community and sign up for our weekly newsletter.": "Sluit je aan bij de Ordinals community en meld je aan voor onze wekelijkse nieuwsbrief.",
+	"Subscribe": "Abonneren",
+	"Discover": "Ontdekken",
+	"Articles": "Artikelen",
+	"Glossary": "Woordenboek",
+	"Community": "Gemeenschap",
+	"Contribute": "Bijdragen",
+	"Socials": "Sociale Media",
+	"Donate": "Doneren",
+	"Home": "Home",
+	"Published": "Gepubliceerd",
+	"Updated": "Bijgewerkt",
+	"Disclaimer": "Disclaimer",
+	"disclaimerText": "De informatie in dit artikel is uitsluitend bedoeld voor algemene informatiedoeleinden. Hoewel we ernaar streven de informatie actueel en nauwkeurig te houden, kunnen er discrepanties, fouten of weglatingen zijn. Ordinals Academy geeft geen enkele vorm van uitdrukkelijke of impliciete garantie of verklaring met betrekking tot de volledigheid, nauwkeurigheid, betrouwbaarheid, geschiktheid of beschikbaarheid van de in dit artikel vervatte informatie voor welk doel dan ook. Elke afhankelijkheid die u stelt op dergelijke informatie is daarom strikt op uw eigen risico. In geen geval zal Ordinals Academy aansprakelijk zijn voor enig verlies of schade, inclusief maar niet beperkt tot indirecte of gevolgschade of enige schade of verlies van welke aard dan ook die voortvloeit uit het gebruik van of afhankelijkheid van in dit artikel verstrekte informatie. Dit artikel kan links bevatten naar externe websites die niet worden geleverd of onderhouden door of op enige wijze zijn verbonden met Ordinals Academy. Houd er rekening mee dat Ordinals Academy niet garandeert voor de nauwkeurigheid, relevantie, tijdigheid of volledigheid van enige informatie op deze externe websites. We moedigen lezers aan om altijd te overleggen met de juiste professionals of experts voordat ze beslissingen nemen op basis van de inhoud van dit artikel. De meningen en standpunten die in dit artikel worden geuit, zijn die van de auteurs en weerspiegelen niet noodzakelijkerwijs het officiële beleid of standpunt van Ordinals Academy.",
+	"Share this Post": "Deel dit bericht"
 }

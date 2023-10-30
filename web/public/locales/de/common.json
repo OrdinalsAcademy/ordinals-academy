@@ -135,5 +135,25 @@
 	"utxo": {
 		"title": "Unverbrauchte Transaktionsausgabe (UTXO)",
 		"description": "Anstelle von Kontosalden verwendet Bitcoin UTXOs, um den Standort von Münzen im Netzwerk zu verfolgen. Um eine UTXO auszugeben, müssen Sie eine Unterschrift bereitstellen, um zu beweisen, dass Sie den privaten Schlüssel besitzen, der zu dieser Adresse gehört."
-	}
+	},
+
+	"No idea where to start?": "Keine Ahnung, wo Sie anfangen sollen?",
+	"Do not worry. Our glossary is a great place to get you up to speed.": "Keine Sorge. Unser Glossar ist ein großartiger Ort, um Sie auf den neuesten Stand zu bringen.",
+	"Latest Releases": "Neueste Veröffentlichungen",
+	"Don't miss out.": "Verpassen Sie nichts.",
+	"Join the Ordinals community and sign up for our weekly newsletter.": "Treten Sie der Ordinals-Community bei und abonnieren Sie unseren wöchentlichen Newsletter.",
+	"Subscribe": "Abonnieren",
+	"Discover": "Entdecken",
+	"Articles": "Artikel",
+	"Glossary": "Glossar",
+	"Community": "Gemeinschaft",
+	"Contribute": "Beitragen",
+	"Socials": "Soziale Medien",
+	"Donate": "Spenden",
+	"Home": "Startseite",
+	"Published": "Veröffentlicht",
+	"Updated": "Aktualisiert",
+	"Disclaimer": "Haftungsausschluss",
+	"disclaimerText": "Die in diesem Artikel bereitgestellten Informationen dienen ausschließlich allgemeinen Informationszwecken. Obwohl wir bemüht sind, die Informationen aktuell und genau zu halten, kann es zu Diskrepanzen, Fehlern oder Auslassungen kommen. Ordinals Academy gibt keine Zusicherungen oder Garantien jeglicher Art, weder ausdrücklich noch stillschweigend, hinsichtlich der Vollständigkeit, Genauigkeit, Zuverlässigkeit, Eignung oder Verfügbarkeit der in diesem Artikel enthaltenen Informationen für irgendeinen Zweck ab. Jede auf diese Informationen gestützte Verwendung erfolgt daher ausschließlich auf Ihr eigenes Risiko. In keinem Fall haftet Ordinals Academy für Verluste oder Schäden, einschließlich, ohne Einschränkung, indirekter oder folgender Verluste oder Schäden oder jeglicher Art von Verlusten oder Schäden, die aus der Verwendung oder dem Vertrauen auf die in diesem Artikel bereitgestellten Informationen entstehen. Dieser Artikel kann Links zu externen Websites enthalten, die nicht von Ordinals Academy bereitgestellt oder gepflegt oder in irgendeiner Weise mit Ordinals Academy verbunden sind. Bitte beachten Sie, dass Ordinals Academy nicht die Genauigkeit, Relevanz, Aktualität oder Vollständigkeit von Informationen auf diesen externen Websites garantiert. Wir empfehlen den Lesern, sich immer mit geeigneten Fachleuten oder Experten in Verbindung zu setzen, bevor sie Entscheidungen auf Grundlage des Inhalts dieses Artikels treffen. Die in diesem Artikel geäußerten Ansichten und Meinungen sind die der Autoren und spiegeln nicht unbedingt die offizielle Politik oder Position von Ordinals Academy wider.",
+	"Share this Post": "Diesen Beitrag teilen"
 }

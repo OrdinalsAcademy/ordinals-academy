@@ -4,6 +4,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
 import Scrollspy from 'react-scrollspy';
 import { formatDate } from 'utils/date';
+import { useTranslation } from 'next-i18next';
 
 export async function getStaticPaths({ locales }: any) {
 	const paths = locales.flatMap((locale: any) => {
@@ -41,6 +42,7 @@ export async function getStaticProps({ params, locale }: any) {
 const BASE_URL = 'https://ordinalsacademy.org';
 
 function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
+	const { t } = useTranslation('common');
 	const body = postData?.contentHtml;
 
 	const copyToClipboard = () => {
@@ -110,14 +112,14 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 								{/* Breadcrumbs */}
 								<div className="text-sm text-gray-400 mb-6">
 									<a href="/" className="hover:underline">
-										Home
+										{t('Home')}
 									</a>{' '}
 									&gt;
 									<a
 										href="/articles"
 										className="hover:underline ml-2"
 									>
-										Articles
+										{t('Articles')}
 									</a>{' '}
 									&gt;
 									<span className="ml-2">
@@ -138,7 +140,7 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 									)}
 									{postData?.datePublished && (
 										<div>
-											Published{' '}
+											{t('Published')}{' '}
 											{formatDate(
 												postData?.datePublished
 											)}
@@ -146,7 +148,7 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 									)}
 									{postData?.dateUpdated && (
 										<div>
-											Updated{' '}
+											{t('Updated')}{' '}
 											{formatDate(postData?.dateUpdated)}
 										</div>
 									)}
@@ -196,43 +198,8 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 								{/* ...continue with the rest of your article structure... */}
 								<div>
 									<p className="mt-6 italic">
-										<strong>Disclaimer: </strong>
-										The information provided in this article
-										is for general informational purposes
-										only. While we strive to keep the
-										information up-to-date and accurate,
-										there may be some discrepancies, errors,
-										or omissions. Ordinals Academy makes no
-										representations or warranties of any
-										kind, express or implied, about the
-										completeness, accuracy, reliability,
-										suitability, or availability of the
-										information contained in this article
-										for any purpose. Any reliance you place
-										on such information is therefore
-										strictly at your own risk. In no event
-										will Ordinals Academy be liable for any
-										loss or damage including, without
-										limitation, indirect or consequential
-										loss or damage, or any loss or damage
-										whatsoever arising from the use or
-										reliance on information provided in this
-										article. This article may contain links
-										to external websites that are not
-										provided or maintained by or in any way
-										affiliated with Ordinals Academy. Please
-										note that Ordinals Academy does not
-										guarantee the accuracy, relevance,
-										timeliness, or completeness of any
-										information on these external websites.
-										We encourage readers to always consult
-										with appropriate professionals or
-										experts before making any decisions
-										based on the content of this article.
-										The views and opinions expressed in this
-										article are those of the authors and do
-										not necessarily reflect the official
-										policy or position of Ordinals Academy.
+										<strong>{t('Disclaimer')}: </strong>
+										{t('disclaimerText')}
 									</p>
 								</div>
 							</div>
@@ -242,7 +209,7 @@ function Post({ postData }: InferGetStaticPropsType<typeof getStaticProps>) {
 						<div className="space-y-6">
 							<div className="mb-12">
 								<div className="text-xl font-bold">
-									Share this Post
+									{t('Share this Post')}
 								</div>
 								<div className="mt-6 gap-10 flex">
 									<div>

@@ -135,5 +135,24 @@
 	"utxo": {
 		"title": "Đầu ra giao dịch chưa tiêu (UTXO)",
 		"description": "Thay vì số dư tài khoản, Bitcoin sử dụng UTXOs để theo dõi vị trí của tiền trên mạng. Để tiêu một UTXO, bạn phải cung cấp một chữ ký để chứng minh bạn sở hữu khóa riêng tư tương ứng với địa chỉ đó."
-	}
+	},
+	"No idea where to start?": "Không biết bắt đầu từ đâu?",
+	"Do not worry. Our glossary is a great place to get you up to speed.": "Đừng lo. Bảng thuật ngữ của chúng tôi là nơi tuyệt vời để bạn bắt kịp.",
+	"Latest Releases": "Phát Hành Mới Nhất",
+	"Don't miss out.": "Đừng bỏ lỡ.",
+	"Join the Ordinals community and sign up for our weekly newsletter.": "Tham gia cộng đồng Ordinals và đăng ký nhận bản tin hàng tuần của chúng tôi.",
+	"Subscribe": "Đăng Ký",
+	"Discover": "Khám Phá",
+	"Articles": "Bài Viết",
+	"Glossary": "Bảng Thuật Ngữ",
+	"Community": "Cộng Đồng",
+	"Contribute": "Đóng Góp",
+	"Socials": "Mạng Xã Hội",
+	"Donate": "Quyên Góp",
+	"Home": "Trang Chủ",
+	"Published": "Đã Xuất Bản",
+	"Updated": "Đã Cập Nhật",
+	"Disclaimer": "Tuyên Bố Từ Chối Trách Nhiệm",
+	"disclaimerText": "Thông tin được cung cấp trong bài viết này chỉ mang tính chất thông tin chung. Mặc dù chúng tôi cố gắng giữ thông tin được cập nhật và chính xác, có thể có một số sai sót, lỗi hoặc bỏ sót. Ordinals Academy không đưa ra bất kỳ tuyên bố hoặc bảo đảm nào, dù rõ ràng hay ngụ ý, về tính đầy đủ, chính xác, đáng tin cậy, phù hợp hoặc khả dụng của thông tin có trong bài viết này cho bất kỳ mục đích nào. Do đó, việc bạn dựa vào thông tin đó hoàn toàn là rủi ro của bạn. Trong trường hợp không có tình huống nào Ordinals Academy chịu trách nhiệm về bất kỳ mất mát hoặc thiệt hại nào bao gồm, nhưng không giới hạn, mất mát hoặc thiệt hại gián tiếp hoặc hậu quả, hoặc bất kỳ mất mát hoặc thiệt hại nào từ việc sử dụng hoặc dựa vào thông tin được cung cấp trong bài viết này. Bài viết này có thể chứa liên kết đến các trang web bên ngoài không được cung cấp hoặc bảo trì bởi hoặc không liên quan gì đến Ordinals Academy. Xin lưu ý rằng Ordinals Academy không đảm bảo tính chính xác, liên quan, kịp thời, hoặc đầy đủ của bất kỳ thông tin nào trên các trang web bên ngoài này. Chúng tôi khuyến khích độc giả luôn tham khảo ý kiến của các chuyên gia hoặc chuyên gia phù hợp trước khi đưa ra quyết định dựa vào nội dung của bài viết này. Quan điểm và ý kiến được bày tỏ trong bài viết này là của các tác giả và không nhất thiết phản ánh chính sách hoặc lập trường chính thức của Ordinals Academy.",
+	"Share this Post": "Chia Sẻ Bài Viết Này"
 }

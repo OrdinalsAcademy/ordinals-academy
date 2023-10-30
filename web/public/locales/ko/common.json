@@ -135,5 +135,24 @@
 	"utxo": {
 		"title": "사용되지 않은 트랜잭션 출력 (UTXO)",
 		"description": "계좌 잔액 대신에, 비트코인은 네트워크상의 코인 위치를 추적하기 위해 UTXOs를 사용합니다. UTXO를 사용하려면 해당 주소에 대한 개인 키를 소유하고 있다는 것을 증명하는 서명을 제공해야 합니다."
-	}
+	},
+	"No idea where to start?": "어디서부터 시작해야 할지 모르겠나요?",
+	"Do not worry. Our glossary is a great place to get you up to speed.": "걱정 마세요. 우리의 용어집은 빠르게 따라잡을 수 있는 좋은 곳입니다.",
+	"Latest Releases": "최신 릴리스",
+	"Don't miss out.": "놓치지 마세요.",
+	"Join the Ordinals community and sign up for our weekly newsletter.": "Ordinals 커뮤니티에 가입하고 주간 뉴스레터를 신청하세요.",
+	"Subscribe": "구독하기",
+	"Discover": "발견하기",
+	"Articles": "기사",
+	"Glossary": "용어집",
+	"Community": "커뮤니티",
+	"Contribute": "기여하기",
+	"Socials": "소셜",
+	"Donate": "기부하기",
+	"Home": "홈",
+	"Published": "게시됨",
+	"Updated": "업데이트됨",
+	"Disclaimer": "면책 조항",
+	"disclaimerText": "이 글에 제공된 정보는 일반적인 정보 제공 목적으로만 사용되며, 정보를 최신이고 정확하게 유지하려고 노력하지만 불일치, 오류 또는 생략이 있을 수 있습니다. Ordinals Academy는 이 글에 포함된 정보의 완전성, 정확성, 신뢰성, 적합성 또는 가용성에 대해 어떠한 종류의 명시적 또는 묵시적인 표현이나 보증도 하지 않습니다. 따라서 이러한 정보에 의존하는 것은 전적으로 귀하의 책임입니다. 어떠한 경우에도 Ordinals Academy는 이 글에 제공된 정보의 사용이나 의존으로 인해 발생하는 어떠한 손실이나 손해에도 책임을 지지 않습니다. 이 글에는 Ordinals Academy가 제공하거나 유지하지 않으며 어떠한 방식으로도 관련이 없는 외부 웹사이트로의 링크가 포함되어 있을 수 있습니다. Ordinals Academy는 이러한 외부 웹사이트의 정보의 정확성, 관련성, 시의성 또는 완전성을 보장하지 않습니다. 우리는 독자들이 이 글의 내용을 바탕으로 결정을 내리기 전에 항상 적절한 전문가 또는 전문가와 상담할 것을 권장합니다. 이 글에서 표현된 견해와 의견은 저자의 것이며 반드시 Ordinals Academy의 공식 정책이나 입장을 반영하는 것은 아닙니다.",
+	"Share this Post": "이 게시물 공유"
 }

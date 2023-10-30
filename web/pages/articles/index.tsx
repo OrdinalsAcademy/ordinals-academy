@@ -3,8 +3,10 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import ArticlesDisplay from '@/components/ArticlesDisplay';
 import Head from 'next/head';
 import SubstackCTA from '@/components/SubstackCTA';
+import { useTranslation } from 'next-i18next';
 
 export default function ArticlesOverview({ articles }: any) {
+	const { t } = useTranslation('common');
 	return (
 		<>
 			<Head>
@@ -18,7 +20,7 @@ export default function ArticlesOverview({ articles }: any) {
 				<div className="w-full max-w-7xl mb-20">
 					<div className="items-start flex justify-between">
 						<h1 className="text-2xl font-bold ml-6 md:ml-0 mb-6">
-							Articles ({articles.length})
+							{t('Articles')} ({articles.length})
 						</h1>
 					</div>
 					<ArticlesDisplay articles={articles} />

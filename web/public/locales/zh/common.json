@@ -135,5 +135,24 @@
 	"utxo": {
 		"title": "未花费的交易输出 (UTXO)",
 		"description": "比特币使用 UTXOs 跟踪网络上的硬币位置，而不是账户余额。要花费 UTXO，您必须提供签名以证明您拥有该地址对应的私钥。"
-	}
+	},
+	"No idea where to start?": "不知道从哪里开始？",
+	"Do not worry. Our glossary is a great place to get you up to speed.": "别担心，我们的词汇表是让您快速了解的好地方。",
+	"Latest Releases": "最新发布",
+	"Don't miss out.": "不要错过。",
+	"Join the Ordinals community and sign up for our weekly newsletter.": "加入Ordinals社区并订阅我们的每周时讯。",
+	"Subscribe": "订阅",
+	"Discover": "发现",
+	"Articles": "文章",
+	"Glossary": "词汇表",
+	"Community": "社区",
+	"Contribute": "贡献",
+	"Socials": "社交媒体",
+	"Donate": "捐赠",
+	"Home": "首页",
+	"Published": "已发布",
+	"Updated": "已更新",
+	"Disclaimer": "免责声明",
+	"disclaimerText": "本文提供的信息仅供一般参考之用。虽然我们努力保持信息的及时性和准确性，但可能会有一些不准确之处、错误或遗漏。Ordinals Academy对本文包含的信息的完整性、准确性、可靠性、适用性或可用性不作任何明示或暗示的声明或保证。因此，您对此类信息的依赖完全是您自己的责任。在任何情况下，Ordinals Academy都不对因使用或依赖本文中提供的信息而造成的任何损失或损害承担责任，包括但不限于间接或间接的损失或损害，或任何形式的损失或损害。本文可能包含指向非Ordinals Academy提供、维护或以任何方式与Ordinals Academy相关的外部网站的链接。请注意，Ordinals Academy不保证这些外部网站上的信息的准确性、相关性、及时性或完整性。我们鼓励读者在根据本文内容做出任何决策之前，始终咨询合适的专业人士或专家。本文中表达的观点和意见属于作者个人，并不一定反映Ordinals Academy的官方政策或立场。",
+	"Share this Post": "分享这篇文章"
 }

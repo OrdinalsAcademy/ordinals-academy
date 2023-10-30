@@ -1,13 +1,7 @@
 import Link from 'next/link';
 import LanguageSwitcher from '../LanguageSwitcher';
 import ThemeSwitcher from '../ThemeSwitcher';
-
-const navItems = [
-	{ name: 'Home', href: '/' },
-	{ name: 'Glossary', href: '/glossary' },
-	{ name: 'Articles', href: '/articles' },
-	// { name: 'Courses', href: '/courses' },
-];
+import { useTranslation } from 'next-i18next';
 
 const NavItem = ({ item }: any) => (
 	<Link href={item.href}>
@@ -18,6 +12,7 @@ const NavItem = ({ item }: any) => (
 );
 
 export default function DesktopMenu() {
+	const { t } = useTranslation('common');
 	return (
 		<div className="hidden lg:flex items-center justify-between w-full">
 			<Link href="/">
@@ -30,13 +25,12 @@ export default function DesktopMenu() {
 				</span>
 			</Link>
 			<div className="text-sm lg:flex-grow flex items-center justify-end text-black dark:text-customWhite">
-				{navItems.map((item) => (
+				{/* {navItems.map((item) => (
 					<NavItem key={item.name} item={item} />
-				))}
-				{/* 
-				<Link href="/" locale={changeTo}>
-					<button>{t('change-locale', { changeTo })}</button>
-				</Link> */}
+				))} */}
+				<NavItem item={{ name: t('Home'), href: '/' }} />
+				<NavItem item={{ name: t('Glossary'), href: '/glossary' }} />
+				<NavItem item={{ name: t('Articles'), href: '/articles' }} />
 				<LanguageSwitcher />
 				<ThemeSwitcher />
 			</div>

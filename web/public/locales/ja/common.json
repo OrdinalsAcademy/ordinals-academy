@@ -135,5 +135,24 @@
 	"utxo": {
 		"title": "未使用のトランザクション出力 (UTXO)",
 		"description": "アカウントの残高の代わりに、BitcoinはUTXOsを使用してネットワーク上のコインの位置を追跡します。UTXOを使うには、そのアドレスに対応する秘密鍵を所有していることを証明する署名を提供する必要があります。"
-	}
+	},
+	"No idea where to start?": "どこから始めればいいかわかりませんか？",
+	"Do not worry. Our glossary is a great place to get you up to speed.": "心配しないでください。私たちの用語集はあなたがスピードを上げるのに最適な場所です。",
+	"Latest Releases": "最新リリース",
+	"Don't miss out.": "お見逃しなく。",
+	"Join the Ordinals community and sign up for our weekly newsletter.": "Ordinalsコミュニティに参加して、週刊ニュースレターに登録しましょう。",
+	"Subscribe": "購読",
+	"Discover": "発見",
+	"Articles": "記事",
+	"Glossary": "用語集",
+	"Community": "コミュニティ",
+	"Contribute": "貢献する",
+	"Socials": "ソーシャル",
+	"Donate": "寄付",
+	"Home": "ホーム",
+	"Published": "公開日",
+	"Updated": "更新日",
+	"Disclaimer": "免責事項",
+	"disclaimerText": "この記事で提供される情報は、一般的な情報提供の目的のみを目的としています。私たちは情報を最新かつ正確に保つ努力をしていますが、不一致、エラー、または省略があるかもしれません。Ordinals Academyは、この記事に含まれる情報の完全性、正確さ、信頼性、適切性、または利用可能性に関して、いかなる種類の明示または黙示の表現も保証も行いません。従って、そのような情報に頼ることは厳密にあなた自身のリスクで行われます。いかなる場合においても、Ordinals Academyはこの記事で提供される情報の使用または依存に起因するいかなる損失または損害にも責任を負いません。この記事にはOrdinals Academyが提供または維持していない、またはいかなる方法で関連していない外部ウェブサイトへのリンクが含まれている可能性があります。Ordinals Academyはこれらの外部ウェブサイト上のいかなる情報の正確性、関連性、タイムリー性、または完全性も保証しません。読者がこの記事のコンテンツに基づいて行動する前に、適切な専門家または専門家と常に相談することをお勧めします。この記事で表現される見解および意見は著者のものであり、必ずしもOrdinals Academyの公式方針または立場を反映するものではありません。",
+	"Share this Post": "この投稿を共有"
 }
