@@ -1,14 +1,14 @@
 ---
 title: 'Uw eerste Ordinal kopen: Een stap-voor-stap gids!'
-description: 'Een gids voor beginners over hoe u uw eerste Ordinal kunt kopen. Van het begrijpen van de Ordinal theorie tot het veilig aanschaffen van inscripties via marktplaatsen zoals Xverse en Magic Eden, ontdek de wereld van Bitcoin NFT's. Ontdek samen met ons de toekomst van digitale eigendom op Bitcoin.'
+description: "Een gids voor beginners over hoe u uw eerste Ordinal kunt kopen. Van het begrijpen van de Ordinal theorie tot het veilig aanschaffen van inscripties via marktplaatsen zoals Xverse en Magic Eden, ontdek de wereld van Bitcoin NFT's. Ontdek samen met ons de toekomst van digitale eigendom op Bitcoin."
 datePublished: '2023-10-23'
 readTimeInMin: '3'
 difficulty: 'Beginner'
 author: 'Franken'
 tldr:
-    - 'Ordinals zijn satoshi's, de kleinste eenheid van bitcoin, met data eraan gehecht, waardoor "NFT's op Bitcoin" worden gecreëerd.'
+    - "Ordinals zijn satoshi's, de kleinste eenheid van bitcoin, met data eraan gehecht, waardoor 'NFTs op Bitcoin' worden gecreëerd."
     - 'Er zijn nu verschillende wallets en marktplaatsen die het veilig bewaren en verkopen van ordinals ondersteunen.'
-    - 'Als u al bekend bent met ETH NFT's, is het proces om te kopen via marktplaatsen zoals Magic Eden of Gamma met wallets zoals Xverse of Leather vergelijkbaar.'
+    - "Als u al bekend bent met ETH NFT's, is het proces om te kopen via marktplaatsen zoals Magic Eden of Gamma met wallets zoals Xverse of Leather vergelijkbaar."
 ---
 
 Voor degenen die nieuw zijn in de wereld van ordinals, kunnen de aanvankelijke vaktermen enigszins verwarrend zijn, maar dat betekent niet dat dit de eenvoud van het aankoopproces binnen de huidige infrastructuur in de weg staat. In dit artikel behandelen we de basis van ordinals en leiden we u door het proces van het kopen van uw eerste NFT (inscriptie) op Bitcoin.

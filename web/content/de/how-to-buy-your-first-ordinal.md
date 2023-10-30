@@ -6,7 +6,7 @@ readTimeInMin: '3'
 difficulty: 'Anfänger'
 author: 'Franken'
 tldr:
-    - 'Ordinals sind Satoshis (die kleinste Einheit von Bitcoin), und Daten sind an diese Ordinals angehängt, was "NFTs auf Bitcoin" schafft.'
+    - "Ordinals sind Satoshis (die kleinste Einheit von Bitcoin), und Daten sind an diese Ordinals angehängt, was 'NFTs auf Bitcoin' schafft."
     - 'Mehrere Wallets und Marktplätze unterstützen jetzt die sichere Aufbewahrung und den Verkauf von Ordinals.'
     - 'Wenn Sie mit ETH NFTs vertraut sind, ist der Kaufprozess ähnlich mit Xverse oder Leather Wallet in Verbindung mit Marktplätzen wie Magic Eden und Gamma.'
 ---
