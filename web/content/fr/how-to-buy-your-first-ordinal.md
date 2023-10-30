@@ -1,6 +1,6 @@
 ---
 title: 'Comment Acheter Votre Premier Ordinal !'
-description: 'Guide étape par étape pour acheter votre premier Ordinal. Plongez dans le monde des NFT Bitcoin en comprenant la Théorie des Ordinaux jusqu'à l'achat réussi d'inscriptions en utilisant Xverse et des plateformes de marché telles que Magic Eden. Plongez dans l'avenir de la propriété numérique sur Bitcoin.'
+description: "Guide étape par étape pour acheter votre premier Ordinal. Plongez dans le monde des NFT Bitcoin en comprenant la Théorie des Ordinaux jusqu'à l'achat réussi d'inscriptions en utilisant Xverse et des plateformes de marché telles que Magic Eden. Plongez dans l'avenir de la propriété numérique sur Bitcoin."
 datePublished: '2023-10-23'
 readTimeInMin: '3'
 difficulty: 'Débutant'
