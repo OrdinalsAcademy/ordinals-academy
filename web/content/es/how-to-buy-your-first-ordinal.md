@@ -1,78 +1,78 @@
 ---
-title: 'How to Buy Your First Ordinal!'
-description: 'Step-by-step guide on buying your first Ordinal. Unravel the world of Bitcoin NFTs from understanding Ordinal Theory to successfully purchasing inscriptions using Xverse and marketplaces like Magic Eden. Dive into the future of digital ownership on Bitcoin.'
+title: '¡Cómo comprar tu primer Ordinal!'
+description: 'Guía paso a paso para comprar tu primer Ordinal. Descubre el mundo de los NFT de Bitcoin, desde entender la Teoría Ordinal hasta comprar inscripciones con éxito usando Xverse y mercados como Magic Eden. Sumérgete en el futuro de la propiedad digital en Bitcoin.'
 datePublished: '2023-10-23'
 readTimeInMin: '3'
-difficulty: 'Beginner'
+difficulty: 'Principiante'
 author: 'Franken'
 tldr:
-    - 'Ordinals are satoshis (the smallest unit of Bitcoin) and data is attached to these ordinals creating “NFTs on Bitcoin”.'
-    - 'Multiple wallets and marketplaces now support the safe storage, and sales of Ordinals.'
-    - "If you're familiar with ETH NFTs, purchasing is similar in process using Xverse or Leather wallet with marketplaces like Magic Eden and Gamma."
+    - 'Los ordinales son satoshis (la unidad más pequeña de Bitcoin) y los datos se adjuntan a estos ordinales creando “NFT en Bitcoin”.'
+    - 'Varias billeteras y mercados ahora admiten el almacenamiento seguro y la venta de Ordinales.'
+    - 'Si estás familiarizado con los NFT de ETH, el proceso de compra es similar utilizando Xverse o Leather wallet con mercados como Magic Eden y Gamma.'
 ---
 
-If you're new to the world of Ordinals, some of the initial terminology can be slightly confusing, potentially detracting from the simplicity of purchasing within the current infrastructure. In this article, we'll cover basics of ordinals and guide you on how to get started when buying your first Inscription (NFT on Bitcoin).
+Si eres nuevo en el mundo de los Ordinales, algunos de los términos iniciales pueden ser un poco confusos, lo que podría restarle sencillez al proceso de compra dentro de la infraestructura actual. En este artículo, cubriremos los conceptos básicos de los ordinales y te guiaremos sobre cómo comenzar al comprar tu primera Inscripción (NFT en Bitcoin).
 
-### Basics of Ordinals
+### Conceptos Básicos de los Ordinales
 
-The system that makes up the Ordinals protocol is comprised of two main parts: **Ordinal Theory**, the numbering of individual Satoshis (0.00000001 of Bitcoin), and **Inscriptions**, the process of attaching data to these Ordinals. The Ordinals protocol to the Bitcoin network is simply bitcoin being sent from one wallet to another as a typical transaction, it’s only through the use of indexers that collect, parse, and store information from transactions, we can determine which jpg belongs with which satoshi.
+El sistema que conforma el protocolo Ordinal está compuesto por dos partes principales: **Teoría Ordinal**, la numeración de satoshis individuales (0.00000001 de Bitcoin), y **Inscripciones**, el proceso de adjuntar datos a estos Ordinales. El protocolo Ordinal en la red de Bitcoin es simplemente bitcoin siendo enviado de una billetera a otra como una transacción típica, es solo a través del uso de indexadores que recopilan, analizan y almacenan información de las transacciones, podemos determinar a qué jpg pertenece cada satoshi.
 
-### Wallets & Marketplaces
+### Billeteras y Mercados
 
-With the advancement in wallets and indexers, we can now comfortably store and purchase ordinals with wallets deemed 'Ordinal Aware' such as Xverse and Leather. In both cases, these wallets store the Ordinal separate from your 'spending' bitcoin, minimizing the risk of accidentally sending an ordinal unintentionally. When connecting your wallet to a marketplace, it will scan that address and determine which assets you own.
+Con el avance en billeteras e indexadores, ahora podemos almacenar y comprar ordinales cómodamente con billeteras denominadas 'Conscientes de Ordinales' como Xverse y Leather. En ambos casos, estas billeteras almacenan el Ordinal por separado de tu bitcoin 'para gastar', minimizando el riesgo de enviar un ordinal accidentalmente. Al conectar tu billetera a un mercado, escaneará esa dirección y determinará qué activos posees.
 
-### How to purchase your first Ordinal?
+### ¿Cómo comprar tu primer Ordinal?
 
-### 1. **Download Your Wallet**
+### 1. **Descarga tu Billetera**
 
-[Visit Xverse App](https://www.xverse.app/)
+[Visita la aplicación Xverse](https://www.xverse.app/)
 
-In this example, we'll be using the Xverse wallet to purchase and store our ordinal. Always confirm that you are downloading from the official Xverse website. Xverse is compatible with Chrome and also offers a mobile version.
+En este ejemplo, usaremos la billetera Xverse para comprar y almacenar nuestro ordinal. Siempre confirma que estás descargando desde el sitio web oficial de Xverse. Xverse es compatible con Chrome y también ofrece una versión móvil.
 
 ![xverse](/images/how-to-buy-your-first-ordinal/image1.png)
 
-### 2. **Fund Your Wallet**
+### 2. **Fondea tu Billetera**
 
-Your Xverse wallet will have three different receiving addresses. For funding your wallet, always send BTC to your 'Bitcoin' address. The ‘Ordinals’ address will be where the ordinal will be sent when purchasing your inscription.
+Tu billetera Xverse tendrá tres direcciones de recepción diferentes. Para fondear tu billetera, siempre envía BTC a tu dirección 'Bitcoin'. La dirección ‘Ordinales’ será donde se enviará el ordinal cuando compres tu inscripción.
 
 ![Screenshot 2023-10-23 130940.png](/images/how-to-buy-your-first-ordinal/image2.png)
 
-### 3. **Connect to a Marketplace**
+### 3. **Conéctate a un Mercado**
 
 https://magiceden.io/ordinals/
 
-In this example, we’ll be using Magic Eden to complete the purchase process. In the top right corner, select 'Connect Wallet.' If this is your first time connecting, you will be prompted to sign and prepare your wallet. Always ensure that you are connecting to the official website.
+En este ejemplo, usaremos Magic Eden para completar el proceso de compra. En la esquina superior derecha, selecciona 'Conectar Billetera'. Si es la primera vez que te conectas, se te pedirá que firmes y prepares tu billetera. Asegúrate siempre de que estás conectándote al sitio web oficial.
 
 ![Untitled](/images/how-to-buy-your-first-ordinal/image3.png)
 
-### 4. **Make Your Purchase**
+### 4. **Realiza tu Compra**
 
-Once you've found the Ordinal you like, select 'Buy Now.' At this point your Xverse wallet will pop-up and prompt you to confirm the transaction. Always double check the items being transferred and received. Once you select ‘Buy Now’ and the transaction is pending, and no one else can purchase that item.
+Una vez que hayas encontrado el Ordinal que te gusta, selecciona 'Comprar Ahora'. En este punto, tu billetera Xverse aparecerá y te pedirá que confirmes la transacción. Siempre verifica dos veces los artículos que se están transfiriendo y recibiendo. Una vez que seleccionas ‘Comprar Ahora’ y la transacción esté pendiente, nadie más puede comprar ese artículo.
 
 ![Untitled](/images/how-to-buy-your-first-ordinal/image4.png)
 
 ![Untitled](/images/how-to-buy-your-first-ordinal/image5.png)
 
-### 5. **Confirm Transaction Has Completed**
+### 5. **Confirma que la Transacción se ha Completado**
 
-Transactions, including transfers and purchases, typically take around 10 minutes to finalize on Bitcoin. However, this duration isn't always consistent and can vary significantly.
+Las transacciones, incluidas las transferencias y compras, suelen tardar alrededor de 10 minutos en finalizar en Bitcoin. Sin embargo, esta duración no siempre es consistente y puede variar significativamente.
 
 ![Untitled](/images/how-to-buy-your-first-ordinal/image6.png)
 
-You can track the progress of your transaction on [mempool.space](http://mempool.space).
+Puedes seguir el progreso de tu transacción en [mempool.space](http://mempool.space).
 
-The arrow indicates where your transaction is in the ‘queue.’ Once approved, the red ‘Unconfirmed’ will turn to a green ‘Confirmed.’
+La flecha indica dónde está tu transacción en la ‘cola’. Una vez aprobada, el ‘No Confirmado’ rojo se cambiará a un ‘Confirmado’ verde.
 
 ![Untitled](/images/how-to-buy-your-first-ordinal/image7.png)
 
-**Congratulations! You’ve now purchased your first Inscribed Ordinal!**
+**¡Felicidades! ¡Ahora has comprado tu primer Ordinal Inscribido!**
 
-### 6. **View Your Ordinal/s**
+### 6. **Visualiza tus Ordinales**
 
-You have several ways to view your recently purchased ordinals. The first method is within the Xverse wallet using the second tab. The second is through the connected marketplace; for Magic Eden, select your address in the top right corner and then choose 'My Items.' Lastly, you can use websites like **[ord.io](http://ord.io/)** and paste your address to see the items you hold.
+Tienes varias maneras de ver tus ordinales recién comprados. El primer método es dentro de la billetera Xverse usando la segunda pestaña. El segundo es a través del mercado conectado; para Magic Eden, selecciona tu dirección en la esquina superior derecha y luego elige 'Mis Artículos'. Finalmente, puedes usar sitios web como **[ord.io](http://ord.io/)** y pegar tu dirección para ver los artículos que posees.
 
 ![Untitled](/images/how-to-buy-your-first-ordinal/image8.png)
 
 ![Untitled](/images/how-to-buy-your-first-ordinal/image9.png)
 
-Thanks for reading, and we hope that this has made your purchasing experience a little less daunting.
+Gracias por leer, y esperamos que esto haya hecho tu experiencia de compra un poco menos intimidante.
