@@ -347,6 +347,6 @@ export default function Glossary(
 
 export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => ({
 	props: {
-		...(await serverSideTranslations(locale ?? 'en', ['common', 'footer'])),
+		...(await serverSideTranslations(locale ?? 'en', ['common'])),
 	},
 });

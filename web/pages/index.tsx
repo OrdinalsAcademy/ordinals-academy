@@ -59,10 +59,7 @@ export const getStaticProps: GetStaticProps<Props> = async ({ locale }) => {
 	return {
 		props: {
 			articles: allPostsData,
-			...(await serverSideTranslations(locale || 'en', [
-				'common',
-				'footer',
-			])),
+			...(await serverSideTranslations(locale || 'en', ['common'])),
 		},
 	};
 };
