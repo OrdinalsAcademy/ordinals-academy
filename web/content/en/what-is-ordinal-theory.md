@@ -73,7 +73,7 @@ The name 'a' is projected as the final creation, anticipated for 2140-02-09 21:0
 
 To understand how the process of assigning and tracking ordinal numbers is completed we can divide the specification code for Ordinal Theory into five sections, each representing a step in the process required for this scheme to work. This spec can be found in the [Bitcoin Improvement Proposal (BIP)](https://github.com/ordinals/ord/blob/master/bip.mediawiki) as written by the creator Casey Rodarmor.
 
-![Ordinal number assignment representation](images/what-is-ordinal-theory/Ordinal-number-assignment-light.png)
+![Ordinal number assignment representation](/images/what-is-ordinal-theory/Ordinal-number-assignment-light.png)
 
 Visual representation of Ordinal Number assignment specification.
 
