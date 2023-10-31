@@ -1,16 +1,17 @@
 ---
-title: 'What is Ordinal Theory?'
-description: 'Ordinal Theory is the scheme for serializing individual satoshis, the smallest denomination of Bitcoin (0.00000001 Bitcoin). This process assigns ‘ordinal numbers’ giving us the ability to track and trace individual satoshis from their time of creation.'
-readTimeInMin: '3'
-difficulty: 'Beginner'
-author: 'Franken'
+title: "What is Ordinal Theory?"
+description: "Ordinal Theory is the scheme for serializing individual satoshis, the smallest denomination of Bitcoin (0.00000001 Bitcoin). This process assigns ‘ordinal numbers’ giving us the ability to track and trace individual satoshis from their time of creation."
+readTimeInMin: "5"
+datePublished: '2023-10-31'
+difficulty: "Beginner"
+author: "Franken"
 tldr:
-    - 'Ordinal Theory serializes individual satoshis, the smallest Bitcoin unit, allowing tracking from creation.'
-    - 'Bitcoin Transactions: Transactions are recorded in blocks on an immutable ledger (blockchain). Bitcoin uses the UTXO model, not account balances.'
-    - 'Ordinal Numbers: Created to store digital assets (NFTs) on Bitcoin. They provide a reference for on-chain data, aiding ownership tracking and transfers.'
-    - 'Rarity Levels: Ordinal Theory introduced rarity levels for satoshis, such as Uncommon, Rare, Epic, Legendary, and Mythic. There are also 'Exotics' for unique patterns.'
-    - 'Satoshi Names: Derived from ordinal numbers using Base26. Names are assigned in reverse creation order.'
-    - 'Specification: The process of assigning and tracking ordinal numbers is divided into five code sections: Bitcoin Subsidy, First Ordinal, Assigning Ordinals in Blocks, Tracking Transactions, and Handling the Coinbase Transaction.'
+    - "Ordinal Theory serializes individual satoshis, the smallest Bitcoin unit, allowing tracking from creation."
+    - "Bitcoin Transactions: Transactions are recorded in blocks on an immutable ledger (blockchain). Bitcoin uses the UTXO model, not account balances."
+    - "Ordinal Numbers: Created to store digital assets (NFTs) on Bitcoin. They provide a reference for on-chain data, aiding ownership tracking and transfers."
+    - "Rarity Levels: Ordinal Theory introduced rarity levels for satoshis, such as Uncommon, Rare, Epic, Legendary, and Mythic. There are also 'Exotics' for unique patterns."
+    - "Satoshi Names: Derived from ordinal numbers using Base26. Names are assigned in reverse creation order."
+    - "Specification: The process of assigning and tracking ordinal numbers is divided into five code sections: Bitcoin Subsidy, First Ordinal, Assigning Ordinals in Blocks, Tracking Transactions, and Handling the Coinbase Transaction."
 ---
 
 Ordinal Theory is the scheme for serializing individual satoshis, the smallest denomination of Bitcoin (0.00000001 Bitcoin). This process assigns ‘ordinal numbers’ giving us the ability to track and trace individual satoshis from their time of creation. 
