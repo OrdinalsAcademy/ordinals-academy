@@ -21,7 +21,7 @@ Before we go into the weeds of Ordinal Theory, it’s important to know two thin
 1. Every successful transaction is recorded in blocks and written to an immutable ledger called the blockchain. Typically this chain of records is updated every 10m with new transactions.
 2. There are no account balances on Bitcoin, instead it uses unspent transaction output (UTXO) model for keeping track of funds. In short, bitcoin doesn’t keep track of your ‘account’ balance, but instead you have UTXOs that are ‘permission slips’ to spend the bitcoin sent to you.
 
-### **Understanding Ordinal Numbers:**
+### **Understanding Ordinal Numbers**
 
 The primary purpose of ordinal numbers stems from the creator's goal of storing digital assets (NFTs) on Bitcoin. While Bitcoin inherently treats all bitcoins as identical, fungible assets without serialization, the creation of Ordinal Theory introduced a method to track and trace satoshis using a first-in, first-out model based on transaction history. ordinal numbers offer a reference point to what is stored on-chain, streamlining the tracking of ownership and facilitating transfers.
 
@@ -33,7 +33,7 @@ Ordinal numbers are searchable on [Ordinals.com](http://ordinals.com/) and prese
 
 ![Sat Number Example](/images/what-is-ordinal-theory/satnumnbers.png)
 
-### **Rarity:**
+### **Rarity**
 
 With the creation of Ordinal Theory, Casey Rodarmor not only conceptualized numbering but also suggested a collector's guide in sync with Bitcoin's periodic events.
 
@@ -69,7 +69,7 @@ Sat number 2099999997689999 (last) = 'a'
 
 The name 'a' is projected as the final creation, anticipated for 2140-02-09 21:02:48 UTC, coinciding with the last bitcoin's issuance.
 
-### The Specification:
+### The Specification
 
 To understand how the process of assigning and tracking ordinal numbers is completed we can divide the specification code for Ordinal Theory into five sections, each representing a step in the process required for this scheme to work. This spec can be found in the [Bitcoin Improvement Proposal (BIP)](https://github.com/ordinals/ord/blob/master/bip.mediawiki) as written by the creator Casey Rodarmor.
 
@@ -136,6 +136,6 @@ coinbase_ordinals.extend(ordinals)
     del coinbase_ordinals[:output.value]
 ```
 
-### Summary:
+### Summary
 
 The essence of Ordinal Theory is to bring a new dimension to Bitcoin, allowing for the serialization of its smallest unit, a satoshi. This serialization not only enhances the traceability of transactions but also introduces a unique aspect of rarity and collectibility to the Bitcoin ecosystem - are you holding any ‘rare’ sats in your wallet? What was once fungible has now been imbued with a non-fungible characteristic.
